@@ -1,14 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="580" version="1" viewBox="0 0 414.772 500.994">
     <g font-family="Special Elite,Sans-Serif">
         <text x="115.249" y="10.538" font-size="22">
-            How to Interpret
+            Comment Interpréter
         </text>
         <text x="54.052" y="38.502" font-size="10">
             <tspan x="54.052" y="38.502"></tspan>
         </text>
         <text x="54.052" y="38.502" font-size="10"/>
         <text x="40.912" y="55.327" font-size="15" font-weight="400" letter-spacing="0" transform="matrix(.92172 0 0 .92172 0 -16.8)" word-spacing="0" style="line-height:125%">
-            <tspan x="40.912" y="55.327">1. A short flash represents a dot.</tspan><tspan x="40.912" y="75.077">2. A long flash represents a dash.</tspan><tspan x="40.912" y="95.827">3. There is a long gap between letters.</tspan><tspan x="40.912" y="115.577">4. There is a very long gap before the word repeats.</tspan>
+            <tspan x="40.912" y="55.327">1. Un flash court représente un point.</tspan><tspan x="40.912" y="75.077">2. Un flash long représente un trait.</tspan><tspan x="40.912" y="94.827">3. Il y a un long espace entre les lettres.</tspan><tspan x="40.912" y="114.577">4. Il y a un très long intervalle avant que le mot ne</tspan>
+            <tspan x="40.912" y="134.327">se répète.</tspan>
         </text>
     </g>
     <g transform="translate(-22.25)">
