@@ -1,0 +1,108 @@
+<!DOCTYPE html><html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Colour Flash — Keep Talking and Nobody Explodes Module</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <style>
+        .condition {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="section">
+    <div class="page page-bg-01">
+        <div class="page-header">
+			<span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+			<span class="page-header-section-title">Colour Flash</span>
+		</div>
+        <div class="page-content">
+    	    <img class="diagram" src="img/Component/Colour Flash.svg">
+            <h2>À propos de "Colour Flash"</h2>
+            <p class="flavour-text">
+                Il est facile d'identifier les couleurs. Rouge, Bleu, Vert, etc. Il s'avère que c'est un peu plus difficile quand on affiche un mot dans une couleur différente...
+			</p>
+
+			<ul>
+                <li>Un module "Colour Flash" fait clignoter de façon répétée une séquence de 8 mots différents représentant des couleurs de différentes couleurs.</li>
+                <li>Les couleurs possibles sont Rouge, Jaune, Vert, Bleu, Magenta et Blanc.</li>
+                <li>Il y a aussi un bouton "Yes" et un bouton "No" sur le module.</li>
+                <li>Il suffit d'appuyer sur un <em>seul</em> des boutons "Yes" et "No" pour désarmer le module, mais il faut le faire au bon moment selon les règles ci-dessous.</li>
+                <li>La couleur du dernier mot de la séquence détermine l'ensemble des règles à suivre ci-dessous.</li>
+                <li>Suivez les règles à partir de la règle la plus haute jusqu'à la règle la plus basse pour le bloc qui s'applique à votre module.</li>
+            </ul>
+
+            <table>
+                <tbody><tr>
+                     <td>
+                         <div class="condition">La couleur du dernier mot de la séquence est Rouge :</div>
+                         <div>Si le mot Vert est utilisé au moins trois fois dans la séquence, appuyez sur "Yes" la troisième fois que le Vert est utilisé comme le mot ou la couleur du mot dans la séquence.</div>
+                         <div>Sinon, si Bleu est utilisée comme couleur du mot exactement une fois, appuyez sur "No" lorsque le mot Magenta est affiché.</div>
+                         <div>Sinon, appuyez sur "Yes" la dernière fois que Blanc est soit le mot, soit la couleur du mot dans la séquence.</div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <div class="condition">La couleur du dernier mot de la séquence est Jaune :</div>
+                         <div>Si le mot Bleu est affiché en Vert, appuyez sur "Yes" la première fois que le mot Vert est utilisé comme couleur du mot.</div>
+                         <div>Sinon, si le mot Blanc est affiché en Blanc ou en Rouge, appuyez sur "Yes" la deuxième fois dans la séquence où la couleur du mot ne correspond pas au mot lui-même.</div>
+                         <div>Sinon, comptez le nombre de fois où le Magenta est utilisé comme mot ou comme couleur du mot dans la séquence (le mot Magenta en couleur Magenta ne compte que pour un seul mot), et appuyez sur "No" sur la couleur dans la position du total (par exemple, un total de 4 signifie la quatrième couleur dans la séquence).</div>
+                     </td>
+                 </tr>
+            </tbody></table>
+        </div>
+        <div class="page-footer relative-footer">Page 1 sur 2</div>
+    </div>
+
+    <div class="page page-bg-02">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+            <span class="page-header-section-title">Colour Flash</span>
+        </div>
+        <div class="page-content">
+            <p>Suite du tableau précédent...
+
+            </p><table>
+                <tbody><tr>
+                    <td>
+                         <div class="condition">La couleur du dernier mot de la séquence est Verte :</div>
+                         <div>Si un mot se produit consécutivement avec des couleurs différentes, appuyez sur "No" à la cinquième entrée de la séquence.</div>
+                         <div>Si le mot Magenta est utilisé au moins trois fois dans la séquence, appuyez sur "No" la première fois que Jaune est utilisé comme le mot ou la couleur du mot dans la séquence.</div>
+                         <div>Sinon, appuyez sur "Yes" sur n'importe quelle couleur où la couleur du mot correspond à celle du mot lui-même.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="condition">La couleur du dernier mot de la séquence est Bleue :</div>
+                        <div>Si la couleur du mot ne correspond pas au mot lui-même trois fois ou plus dans la séquence, appuyez sur "Yes" la première fois dans la séquence où la couleur du mot ne correspond pas au mot lui-même.</div>
+                        <div>Si le mot Rouge est affiché en Jaune ou si le mot Jaune est affiché en Blanc, appuyez sur "No" lorsque le mot Blanc est affiché en Rouge.</div>
+                        <div>Sinon, appuyez sur "Yes" la dernière fois que le mot Vert est soit le mot, soit la couleur du mot dans la séquence.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="condition">La couleur du dernier mot de la séquence est Magenta :</div>
+                        <div>Si une couleur apparaît consécutivement avec des mots différents, appuyez sur "Yes" à la troisième entrée de la séquence.</div>
+                        <div>Si le nombre de fois que le mot Jaune apparaît est supérieur au nombre de fois que la couleur du mot est Bleue, appuyez sur "No" la dernière fois que le mot Jaune est dans la séquence.</div>
+                        <div>Sinon, appuyez sur "No" la première fois dans la séquence où la couleur du mot correspond au mot de la septième entrée de la séquence.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="condition">La couleur du dernier mot de la séquence est Blanche :</div>
+                        <div>Si la couleur du troisième mot correspond à celle du quatrième mot ou du cinquième mot, appuyez sur "No" la première fois que le Bleu est utilisé comme le mot ou la couleur du mot dans la séquence.</div>
+                        <div>Si le mot Jaune est affiché en Rouge, appuyez sur "Yes" la dernière fois que le Bleu est utilisé pour la couleur du mot.</div>
+                        <div>Sinon, appuyez sur "No".</div>
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="page-footer relative-footer">Page 2 sur 2</div>
+    </div>
+</div>
+</body></html>
