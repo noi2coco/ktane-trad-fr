@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LED Encryption — Keep Talking and Nobody Explodes Module</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel='stylesheet' type='text/css' href='css/font.css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src='js/ktane-utils.js'></script>
+    <style>
+        li { margin: .5em 0; }
+    </style>
+</head>
+<body>
+<div class="section">
+    <div class="page page-bg-01">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+            <span class="page-header-section-title">LED Encryption</span>
+        </div>
+        <div class="page-content">
+            <img src="img/Component/LED Encryption.svg" class="diagram">
+            <h2>À propos de « LED Encryption »</h2>
+            <p class="flavour-text">
+                 Ooooh, des lumières et des boutons qui brillent.
+                Je veux jouer avec !
+            </p>
+
+            <ul>
+                <li>Deux à cinq LEDs sont installées en haut du module, représentant des étapes. Pour désarmer le module, ces étapes doivent être résolues dans l'ordre.</li>
+                <li>Quatre boutons avec quatre lettres différentes sont affichés. Les lettres changent à chaque étape.</li>
+                <li>L'étape en cours est indiquée par un numéro en haut à gauche du module.</li>
+                <li>Le multiplicateur de l'étape en cours est indiqué par la LED de cette étape selon le tableau suivant:
+                    <table>
+                        <tr>
+                            <td>Rouge</td>
+                            <td>Verte</td>
+                            <td>Bleue</td>
+                            <td>Jaune</td>
+                            <td>Violette</td>
+                            <td>Orange</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Attribuez chaque lettre de l'alphabet à un chiffre de 0 à 25 (A = 0, B = 1, C = 2, etc.).</li>
+                <li>Un bouton est correct si sa valeur de lettre, multipliée par le multiplicateur de l'étape en cours, modulo 26, est égale à la valeur de la lettre sur son bouton opposé en diagonale.</li>
+                <li>A chaque étape, appuyez sur un bouton correct. Il peut y avoir plus d'une réponse possible.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body></html>
