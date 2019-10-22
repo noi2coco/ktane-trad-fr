@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html><!--<![endif]-->
+	<head>
+		<title>Combination Lock — Keep Talking and Nobody Explodes Mod</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src='js/ktane-utils.js'></script>
+		<link rel='stylesheet' type='text/css' href='css/font.css'>
+	</head>
+	<body>
+		<div class="section">
+			<div class="page page-bg-01">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+					<span class="page-header-section-title">Combination Lock</span>
+				</div>
+				<div class="page-content">
+					<img src="img/Component/Combination Lock.svg" class="diagram">
+					<h2>À propos de "Combination Locks"</h2>
+					<p class="flavour-text">On dirait un verrou à combinaison. Je croyais désarmer cette bombe, pas la déverrouiller.</p>
+					<p class="appendix-reference"><br>
+						Voir l'annexe B pour la référence d'identification des piles.
+						<br>
+						Voir l'annexe Two Factor pour la référence d'identification des Two Factor.
+					</p>
+					Comme un verou à combinaison typique, il faut 3 nombres pour l'ouvrir. Tournez le cadran vers la droite pour le premier nombre, ensuite vers la gauche pour le deuxième, et tournez-le vers la droite pour le dernier. Ça va l'ouvrir !
+					<br>
+					Si les nombres séquentiels dans le code sont les mêmes, effectuez un tour complet à nouveau jusqu'au même nombre.
+					<br>
+					<br>
+					<b><u>Comment décoder la combinaison :</u></b>
+					<br>
+					<br>
+					Chaque nombre varie de 0 à 19. Reportez-vous au tableau pour déterminer chaque nombre. Attention s'il y a des Two Factor présents car ils changent souvent !
+					<br>
+					<br>
+					<table>
+						<tr>
+							<td>
+								<b><u>Premier nombre :</u></b>
+								<ol>
+									<li>Additionner le chiffre le moins significatif de chacun des Two Factor. S'il n'y a pas de Two Factor, utilisez le dernier chiffre du numéro de série plus le nombre de modules résolus.</li>
+									<li>Ajoutez le nombre de piles.</li>
+									<li>Si le résultat est supérieur à 19, continuer à soustraire 20 jusqu'à ce que le résultat soit compris entre 0 et 19.</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b><u>Deuxième nombre :</u></b>
+								<ol>
+									<li>Additionner le chiffre le plus significatif de chacun des Two Factor. S'il n'y a pas de Two Factor, utilisez le nombre de modules sur la bombe (y compris les modules Needy)..</li>
+									<li>Ajoutez le nombre de modules résolus.</li>
+									<li>Si le résultat est supérieur à 19, continuer à soustraire 20 jusqu'à ce que le résultat soit compris entre 0 et 19.</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b><u>Troisième nombre :</u></b>
+								<ol>
+									<li>Additionnez les deux premiers nombres ensemble.</li>
+									<li>Si le résultat est supérieur à 19, continuer à soustraire 20 jusqu'à ce que le résultat soit compris entre 0 et 19.</li>
+								</ol>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer relative-footer">Page 1 sur 1</div>
+			</div>
+		</div>
+	</body>
+</html>
