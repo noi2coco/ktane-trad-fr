@@ -1,0 +1,111 @@
+<!DOCTYPE html><html><head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Simon States — Keep Talking and Nobody Explodes Module</title>
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="js/ktane-utils.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/font.css">
+</head>
+	<body>
+		<div id="ManualContent">
+			<div class="section">
+                <div class="page">
+					<div class="page-header" id="Simon States">
+						<span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+						<span class="page-header-section-title">Simon States</span>
+					</div>
+					<div class="page-content">
+						<img class="diagram" src="img/Component/Simon States.svg">
+						<h2>À propos de "Simon States"</h2>
+						<p class="flavour-text">Je ne suis même pas sûr que ce soit un Simon...</p>
+						<ul>
+							<li>ne ou plusieurs couleurs clignotent par étape.</li>
+							<li>Chaque étape montrera également les couleurs des étapes précédentes.</li>
+							<li>La séquence actuelle se répète après un court délai.</li>
+							<li>Lorsque la séquence se répète, votre entrée n'est pas réinitialisée.</li>
+							<li>Si vous appuyez sur une touche incorrecte, votre entrée est réinitialisée.</li>
+							<li>À l'aide du tableau de la page suivante, appuyez sur la couleur correcte à chaque étape pour avancer.</li>
+							<li>Lorsqu'une règle demande des priorités de couleurs, utilisez le tableau ci-dessous pour déterminer la bonne couleur.</li>
+						</ul>
+						<table>
+							<tbody>
+								<tr>
+									<td rowspan="2">Prioriété</td><td colspan="4">Couleur du bouton en haut à gauche</td>
+								</tr><tr>
+									<td>Rouge</td><td>Jaune</td><td>Vert</td><td>Bleu</td>
+								</tr><tr>
+									<td>La plus haute</td><td>Rouge</td><td>Bleu</td><td>Vert</td><td>Jaune</td>
+								</tr><tr>
+									<td>Haute</td><td>Bleu</td><td>Jaune</td><td>Rouge</td><td>Vert</td>
+								</tr><tr>
+									<td>Basse</td><td>Vert</td><td>Rouge</td><td>Jaune</td><td>Bleu</td>
+								</tr><tr>
+									<td>La plus basse</td><td>Jaune</td><td>Vert</td><td>Bleu</td><td>Rouge</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+                    <div class="page-footer relative-footer">Page 1 sur 2</div>
+				</div>
+				<div class="page">
+					<div class="page-header">
+						<span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+						<span class="page-header-section-title">Simon States</span>
+					</div>
+					<div class="page-content">
+						<table>
+							<tbody>
+								<tr>
+									<td>Étape 1
+                                        <ul>
+											<li>Si 1 couleur clignote, appuyez sur cette couleur.</li>
+											<li>Sinon, si 2 couleurs clignotent et que l'une d'elles est bleue, appuyez sur la couleur la plus prioritaire qui a clignoté.</li>
+											<li>Sinon, si 2 couleurs clignotent, appuyez sur le bleu.</li>
+											<li>Sinon, si 3 couleurs clignotent, y compris le rouge, appuyez sur la couleur la moins prioritaire qui a clignoté.</li>
+											<li>Sinon, si 3 couleurs clignotent, appuyez sur le rouge.</li>
+											<li>Sinon, appuyez sur la 2ème couleur prioritaire.</li>
+										</ul>
+									</td>
+								</tr><tr>
+									<td>Étape 2
+                                        <ul>
+											<li>Si seuls le rouge et le bleu clignotent, appuyez sur la couleur la plus prioritaire qui n'a pas clignoté.</li>
+											<li>Sinon, si 2 couleurs clignotent, appuyez sur la couleur la moins prioritaire qui n'a pas clignoté.</li>
+											<li>Sinon, si 1 couleur, autre que bleu, clignote, appuyez sur le bleu.</li>
+											<li>Sinon, si 1 couleur clignote, appuyez sur le jaune.</li>
+											<li>Sinon, si tout clignote, appuyez sur la couleur de l'Étape 1.</li>
+											<li>Sinon, appuyez sur la couleur qui n'a pas clignoté.</li>
+										</ul>
+									</td>
+								</tr><tr>
+									<td>Étape 3
+                                        <ul>
+											<li>Si 3 couleurs clignotent et qu'au moins une a déjà été pressée, appuyez sur celle la plus prioritaire qui a clignoté et qui n'a pas été pressée.</li>
+											<li>Sinon, si 3 couleurs clignotent, appuyez sur la couleur la plus prioritaire qui a clignoté.</li>
+											<li>Sinon, si 2 couleurs clignotent et que les deux ont été appuyées, appuyez sur la couleur la moins prioritaire qui n'a pas clignoté.</li>
+											<li>Sinon, si 2 couleurs clignotent, appuyez sur la couleur de l'Étape 1.</li>
+											<li>Sinon, si 1 couleur clignote, appuyez sur cette couleur.</li>
+											<li>Sinon, appuyez sur la 2ème couleur la moins prioritaire.</li>
+										</ul>
+									</td>
+								</tr><tr>
+									<td>Étape 4
+                                        <ul>
+											<li>Si 3 couleurs distinctes ont été pressées, appuyez sur la 4ème couleur.</li>
+											<li>Sinon, si 3 couleurs clignotent et qu'une seule n'a pas été pressée, appuyez sur cette couleur.</li>
+											<li>Sinon, si au moins 3 couleurs clignotent, appuyez sur la couleur la moins prioritaire.</li>
+											<li>Sinon, si 1 couleur clignote, appuyez sur cette couleur.</li>
+											<li>Sinon, appuyez sur le bouton vert.</li>
+										</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+                    <div class="page-footer relative-footer">Page 2 sur 2</div>
+				</div>
+			</div>
+		</div>
+</body></html>
