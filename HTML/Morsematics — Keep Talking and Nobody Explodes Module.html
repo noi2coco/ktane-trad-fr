@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Morsematics — Keep Talking and Nobody Explodes Module</title>
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src='js/ktane-utils.js'></script>
+        <link rel='stylesheet' type='text/css' href='css/font.css'>
+        <style>
+            .hardmodule-wrap {
+                width: 0;
+                height: 0;
+            }
+            .hardmodule {
+                width: 2em;
+                height: 66em;
+                opacity: 0.3;
+                background-color: #FF0000;
+                -webkit-print-color-adjust: exact;
+            }
+        </style>
+	</head>
+	<body>
+		<div id="ManualContent">
+			<div class="section">
+                <div class="page">
+					<div class='hardmodule-wrap'><div class='hardmodule'></div></div>
+					<div class="page-header">
+						<span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+						<span class="page-header-section-title">Morsematics</span>
+					</div>
+					<div class="page-content">
+						<img src="img/Component/Morsematics.svg" class="diagram">
+						<h2>À propos de "Morsematics"</h2>
+                        <p class="flavour-text">Compris ? Parce qu'il utilise le morse et les maths ! Je vais sortir...</p>
+                        <ul>
+                            <li>Chaque lettre de l'alphabet possède une valeur numérique égale à sa position (A=1, B=2... Z=26).</li>
+                            <li>Les valeurs numériques en dehors de la plage 1-26 bouclent (Z+1=A, 26+1=1)</li>
+                            <li>Trois lettres uniques sont reçues sur une boucle, représentées par les trois feux clignotants au milieu du module</li>
+                            <li>Pour résoudre le module, une lettre de réponse correcte doit être envoyée en morse à l'aide du bouton d'émission en bas à droite.</li>
+                            <li>L'interrupteur en haut allume ou éteint les lumières des lettres reçues.</li>
+                        </ul>
+                        Le morse transmis est interprété sur les écarts entre les maintiens des boutons.<br>
+                        Le fait de tenir plus du double de la longueur moyenne de l'écart est considéré comme un tiret, et tout ce qui est plus court est considéré comme un point.<br>
+                        Lors de la transmission, E et T sont identiques, car ils sont non distinguables.<br><br>
+                        Prenez les 4ème et 5ème caractères du # de série, c'est votre paire de caractères.
+                        <br><br>
+                        Effectuez chaque étape ci-dessous en séquence, en modifiant progressivement votre paire de caractères :
+                        <ul>
+                            <li>Pour chaque indicateur qui a une lettre correspondante dans les lettres reçues, ajoutez 1 au premier caractère de votre paire si l'indicateur est allumé, ou le deuxième caractère s'il est éteint.</li>
+                            <li>Si la somme de votre paire de caractères est un carré parfait, ajoutez 4 au premier caractère ; sinon, soustrayez 4 du deuxième caractère.</li>
+                            <li>Ajoutez la plus grande lettre reçue au premier caractère de votre paire</li>
+                            <li>Si des lettres reçues sont premiers, soustrayez-les du premier caractère de votre paire.</li>
+                            <li>Si les lettres reçues sont des carrés parfaits, soustrayez-les du deuxième caractère de votre paire.</li>
+                            <li>Si les piles sont présentes et que les lettres reçues sont divisibles par le nombre de piles présentes, soustrayez les lettres reçues des deux caractères de votre paire.</li>
+                        </ul>
+                        Après avoir fait toutes les étapes, effectuez la règle qui s'applique ci-dessous :
+                        <ul>
+                            <li>Les caractères sont égaux : Transmettre le premier caractère</li>
+                            <li>Premier caractère plus grand : Transmettre (caractère 1 - caractère 2).</li>
+                            <li>Deuxième caractère plus grand : Transmettre (caractère 1 + caractère 2).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class='hardmodule-wrap'><div class='hardmodule'></div></div>
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">Morsematics</span>
+                    </div>
+                    <div class="page-content">
+                        <img id="morseCodeChart" src="img/Morsematics/International_Morse_Code.svg">
+                        <table style="border: none">
+                            <tbody>
+                                <tr>
+                                    </td>
+                                </tr>
+                                <tr><td>A</td><td>1</td>
+                                    <td rowspan="26" style="border: none">
+                                <td>N</td><td>14</td></tr>
+                                <tr><td>B</td><td>2</td> <td>O</td><td>15</td></tr>
+                                <tr><td>C</td><td>3</td> <td>P</td><td>16</td></tr>
+                                <tr><td>D</td><td>4</td> <td>Q</td><td>17</td></tr>
+                                <tr><td>E</td><td>5</td> <td>R</td><td>18</td></tr>
+                                <tr><td>F</td><td>6</td> <td>S</td><td>19</td></tr>
+                                <tr><td>G</td><td>7</td> <td>T</td><td>20</td></tr>
+                                <tr><td>H</td><td>8</td> <td>U</td><td>21</td></tr>
+                                <tr><td>I</td><td>9</td> <td>V</td><td>22</td></tr>
+                                <tr><td>J</td><td>10</td><td>W</td><td>23</td></tr>
+                                <tr><td>K</td><td>11</td><td>X</td><td>24</td></tr>
+                                <tr><td>L</td><td>12</td><td>Y</td><td>25</td></tr>
+                                <tr><td>M</td><td>13</td><td>Z</td><td>26</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</body>
+</html>
