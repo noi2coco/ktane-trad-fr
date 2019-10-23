@@ -38,7 +38,7 @@
                 "Soda,2.05,Sucrerie",
                 "Tissues,3.94,Cosmétique",
                 "White Bread,2.43,Céréale",
-                "Canola Huile,2.28,Huile",
+                "Canola Oil,2.28,Huile",
                 "Mustard,2.36,Autre",
                 "Deodorant,3.97,Cosmétique",
                 "White Milk,3.62,Produit Laitier",
@@ -56,7 +56,7 @@
                 "Toothpaste,2.50,Cosmétique",
                 "Peanut Butter,5.00,Protéine",
                 "Gum,1.12,Sucrerie",
-                "Boisson Bottles,9.37,Boisson",
+                "Water Bottles,9.37,Boisson",
                 "Spaghetti,2.92,Céréale",
                 "Chocolate Bar,2.10,Sucrerie",
                 "Ketchup,3.59,Autre",
@@ -90,7 +90,7 @@
                 "Ice Cream,4.99,Produit Laitier",
                 "Salad Mix,2.47,Légume",
                 "Bagel,4.20,Céréale",
-                "Légume Huile,2.89,Huile",
+                "Vegetable Oil,2.89,Huile",
                 "Batteries,4.49,Autre",
                 "Taco Shells,5.01,Céréale",
                 "Bleach,6.90,Autre",
@@ -106,7 +106,7 @@
                 "Tagliatelle,2.92,Céréale",
                 "Spirelli,2.92,Céréale",
                 "Penne,2.92,Céréale",
-                "Car Engine Huile,3.36,Huile",
+                "Car Engine Oil,3.36,Huile",
                 "Parsley,0.69,Spice",
                 "Sage,1.75,Spice",
                 "Rosemary,3.19,Spice",
@@ -151,7 +151,8 @@
                 "Apples,1.32,Fruit",
                 "Grapes,2.98,Fruit",
                 "Fish,9.99,Protéine",
-                "Boissonmelons,0.32,Fruit",
+                "Watermelons,0.32,Fruit",
+                "Watermelons,0.32,Fruit",
                 "Carrots,0.77,Légume",
                 "Cherries,3.21,Fruit",
                 "Plums,1.99,Fruit",
@@ -279,24 +280,24 @@
                     <ul class="squished">
                         <li>Il y a une liste de courses des articles qui sont achetés et qui peuvent être visualisés avec les boutons fléchés.</li>
                         <li>Au-dessus, il indique le montant payé par le client.</li>
-                        <li>Calculez le prix de revient de tous les articles, en appliquant la promotion à chaque article en fonction du jour de la semaine.</li>
+                        <li>Calculez le prix de revient de tous les articles, en appliquant la promotion du jour de la semaine.</li>
                         <li>Les articles pondérés doivent avoir leur pondération appliquée avant l'application de la promotion.</li>
-                        <li>Si le client a assez payé, il suffit d'entrer le montant exact de monnaie qu'il doit recevoir en utilisant les boutons du module et d'appuyer sur «&nbspsubmit&nbsp».</li>
+                        <li>Si le client a assez payé, il suffit d'entrer le montant exact de monnaie qu'il doit recevoir et d'appuyer sur «&nbspsubmit&nbsp».</li>
                         <li>Sinon, si le client n'a pas assez payé, appuyez sur "submit" sans aucune modification pour alerter le client. Attendez la nouvelle somme d'argent de la part du client et déterminez ensuite la somme à rendre.</li>
                         <li>Après avoir appuyé sur le bouton "submit", le paiement sera validé.</li>
                     </ul>
                     <h3 class="squished">Glossaire</h3>
                     <ul class="squished">
-                        <li>Le prix de l'article se réfère au prix avant que la promotion n'ait été appliquée.</li>
+                        <li>Le prix de l'article est le prix avant que la promotion n'ait été appliquée.</li>
                         <li>Le prix des articles à prix fixe ne varie pas en fonction de leur poids.</li>
-                        <li>Une racine numérique est calculée en additionnant tous les chiffres d'un numéro et en répétant le processus sur le nouveau numéro jusqu'à ce que vous ayez un seul chiffre.</li>
-                        <li>L'arrondi commercial est lorsque le chiffre arrondi est supérieur ou égal à 5, le nombre est arrondi à l'unité supérieure, sinon il est arrondi à l'unité inférieure.</li>
+                        <li>Une racine numérique est est la somme des chiffres d'un nombre. La somme est éventuellement répétée jusqu'à obtenir un seul chiffre.</li>
+                        <li>L'arrondi commercial est lorsque le chiffre est supérieur ou égal à 5, le nombre est arrondi à l'unité supérieure, sinon à l'unité inférieure.</li>
                     </ul>
 
                     <h3 class="squished">Promotions :</h3>
                     <div style="font-style: italic; font-size: 13px;">Le jour de la semaine est la date indiquée sur l'ordinateur du désamorceur lorsque le module est activé.</div>
 					
-                    <em>Lundi Liant</em>
+                    <em>Lundi Libre</em>
                     <div class="sale">Les 1<sup>er</sup>, 3<sup>e</sup> et 6<sup>e</sup> articles de la liste d'achats coûtent <span class="rule-seeded">15%</span>.</div>
 
                     <em>Mardi Mouvementé</em>
@@ -341,7 +342,7 @@
                         <tr><td>Bananas</td><td>0.87$ par livre</td><td>Fruit     </td><td class="borderless"></td><td>Mints</td><td>6.39$</td><td>Sucrerie              </td></tr>
                         <tr><td>Broccoli</td><td>1.39$ par livre</td><td>Légume</td><td class="borderless"></td><td>Mustard</td><td>2.36$</td><td>Autre            </td></tr>
                         <tr><td>Candy Canes</td><td>3.51$</td><td>Sucrerie        </td><td class="borderless"></td><td>Oranges</td><td>0.80$ par livre</td><td>Fruit     </td></tr>
-                        <tr><td>Canola Huile</td><td>2.28$</td><td>Huile           </td><td class="borderless"></td><td>Paper Towels</td><td>9.46$</td><td>Cosmétique</td></tr>
+                        <tr><td>Canola Oil</td><td>2.28$</td><td>Huile           </td><td class="borderless"></td><td>Paper Towels</td><td>9.46$</td><td>Cosmétique</td></tr>
                         <tr><td>Cereal</td><td>4.19$</td><td>Céréale             </td><td class="borderless"></td><td>Pasta Sauce</td><td>2.30$</td><td>Légume    </td></tr>
                         <tr><td>Cheese</td><td>4.49$</td><td>Produit Laitier             </td><td class="borderless"></td><td>Peanut Butter</td><td>5.00$</td><td>Protéine    </td></tr>
                         <tr><td>Chicken</td><td>1.99$ par livre</td><td>Protéine   </td><td class="borderless"></td><td>Pork</td><td>4.14$ par livre</td><td>Protéine      </td></tr>
@@ -369,7 +370,7 @@
                         <tr><td>Ketchup</td><td>3.59$</td><td>Autre           </td><td class="borderless"></td><td>Tomatoes</td><td>1.80$ par livre</td><td>Fruit  </td></tr>
                         <tr><td>Lemons</td><td>1.74$ par livre</td><td>Fruit     </td><td class="borderless"></td><td>Toothpaste</td><td>2.50$</td><td>Cosmétique</td></tr>
                         <tr><td>Lettuce</td><td>1.10$ par livre</td><td>Légume</td><td class="borderless"></td><td>Turkey</td><td>2.98$ par livre</td><td>Protéine  </td></tr>
-                        <tr><td>Lollipops</td><td>2.61$</td><td>Sucrerie         </td><td class="borderless"></td><td>Boisson Bottles</td><td>9.37$</td><td>Boisson    </td></tr>
+                        <tr><td>Lollipops</td><td>2.61$</td><td>Sucrerie         </td><td class="borderless"></td><td>Water Bottles</td><td>9.37$</td><td>Boisson    </td></tr>
                         <tr><td>Lotion</td><td>7.97$</td><td>Cosmétique     </td><td class="borderless"></td><td>White Bread</td><td>2.43$</td><td>Céréale      </td></tr>
                         <tr><td>Mayonnaise</td><td>3.99$</td><td>Huile          </td><td class="borderless"></td><td>White Milk</td><td>3.62$</td><td>Produit Laitier       </td></tr>
                     </table>
