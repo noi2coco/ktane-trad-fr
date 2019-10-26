@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Boolean Venn Diagram — Keep Talking and Nobody Explodes Module</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel='stylesheet' type='text/css' href='css/font.css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src='js/ktane-utils.js'></script>
+    <style>
+        td {
+            width:25%;
+            text-align:center;
+            font-weight:bold;
+            font-size:125%;
+            line-height:120%;
+        }
+        span.symbol {
+            font-size: 200%;
+        }
+        span.isymbol {
+            font-size: 125%;
+        }
+    </style>
+</head>
+<body>
+<div class="section">
+    <div class="page page-bg-01">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+            <span class="page-header-section-title">Boolean Venn Diagram</span>
+        </div>
+        <div class="page-content">
+            <img src="img/Component/Boolean Venn Diagram.svg" class="diagram">
+            <h2>À propos de « Boolean Venn Diagrams »</h2>
+            <p class="flavour-text">
+		Pourquoi y a-t-il un grand diagramme de Venn ? Pourquoi y a-t-il des symboles bizarres ? Oh non....
+
+            <ul>
+                <li>Ce module comporte huit boutons, un pour chaque section cloisonnée du diagramme de Venn et un représentant la zone non cloisonnée par l'une des sections du diagramme.
+                <li>Les trois cercles sont appelés «&nbsp;A&nbsp;» (en haut), «&nbsp;B&nbsp;» (en bas à gauche) et «&nbsp;C&nbsp;» (en bas à droite).
+                <li>Pour chaque section, utilisez l'expression logique booléenne affichée au-dessus du diagramme de Venn pour déterminer si cette section est «&nbsp;vrai&nbsp;» ou «&nbsp;faux&nbsp;» en appliquant les règles suivantes :
+                    <ul>
+                        <li>Si la section est incluse dans un cercle, la valeur de cette variable est considérée comme «&nbsp;vrai&nbsp;». Sinon, c'est «&nbsp;faux&nbsp;».<br>
+                             <i>Exemple : La section centrale est incluse dans les trois cercles, donc «&nbsp;A&nbsp;», «&nbsp;B&nbsp;» et «&nbsp;C&nbsp;» doivent tous être considérés comme «&nbsp;vrais&nbsp;» dans l'évaluation de cette section.</i>
+                        <li> Évaluez l'opérateur entre parenthèses avant l'opérateur à l'extérieur des parenthèses.
+                        <li> Des images décrivant chaque opérateur peuvent être trouvées ci-dessous (les régions grises représentent «&nbsp;true&nbsp;»).
+                        <li> Si la section est évaluée à «&nbsp;\vrai&nbsp;», appuyez sur le bouton qui lui correspond. La section devient verte.
+                    </ul> Résolvez le module en appuyant sur les boutons correspondant à toutes les sections «&nbsp;vrai&nbsp;».
+                <li> Remarque : si vous appuyez sur un bouton incorrect, une erreur sera générée et la section deviendra rouge.
+            </ul>
+            <!-- Note that this table may be replaced with a harder version -->
+            <table style="width:100%">
+                <tr><td>X <span class='isymbol'>&#x2227;</span> Y<br>ET<td>X <span class='isymbol'>&#x2228;</span> Y<br>OU<td>X <span class='isymbol'>&#x22BB;</span> Y<br>OU exclusif<td>X <span class='symbol'>&#x2192;</span> Y<br>IMPLIQUE</tr>
+                <tr><td><img src="img/Boolean Venn Diagram/TAND.svg"><td><img src="img/Boolean Venn Diagram/TOR.svg"><td><img src="img/Boolean Venn Diagram/TXOR.svg"><td><img src="img/Boolean Venn Diagram/TLIMP.svg"></tr>
+                <tr style="height:20px"></tr>
+                <tr><td>X | Y<br>NON ET<td>X <span class='symbol'>&#x2193;</span> Y<br>NON OU<td>X <span class='symbol'>&#x2194;'</span> Y<br>NON OU exclusif<td>X <span class='symbol'>&#x2190;</span> Y<br>IMPLIQUÉ PAR</tr>
+                <tr><td><img src="img/Boolean Venn Diagram/TNAND.svg"><td><img src="img/Boolean Venn Diagram/TNOR.svg"><td><img src="img/Boolean Venn Diagram/TXNOR.svg"><td><img src="img/Boolean Venn Diagram/TRIMP.svg"></tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body></html>
