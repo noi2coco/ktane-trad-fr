@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Perspective Pegs — Keep Talking and Nobody Explodes Mod</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src='js/ktane-utils.js'></script>
+		<link rel='stylesheet' type='text/css' href='css/font.css'>
+        <style>
+            em { font-style: normal; font-weight: bold; text-decoration: none; }
+            td.sep { padding: 0 1mm; }
+            col.number { width: 15mm; }
+            col.color, col.sequence { width: 30mm; }
+            td.number, td.subhead, td.sequence { text-align: center; }
+            h3 { font-weight: normal; font-size: 1.25em; }
+            h4 { text-decoration: none; margin-top: 3em; }
+            p { margin: .1em 0; }
+            table { border: none; margin-top: .2em; }
+        </style>
+	</head>
+	<body>
+		<div class="section">
+			<div class="page page-bg-01">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+					<span class="page-header-section-title">Perspective Pegs</span>
+				</div>
+				<div class="page-content">
+					<img src="img/Component/Perspective Pegs.svg" class="diagram">
+					<h2>À propos de "Perspective Pegs"</h2>
+					<p class="flavour-text">Tout est différent du point de vue d'un autre.
+
+                    <h3>Étape 1 : Couleur des Touches</h3>
+
+                    <ul>
+                        <li>Calculez la différence de position alphabétique des 2 premières lettres du numéro de série. (A = 1, B = 2, etc.)
+                        <li>La différence entre les positions alphabétiques est positive.
+                        <li>S'il y a quatre lettres ou plus dans le numéro de série, ajouter la différence de position des troisième et quatrième lettres.
+                        <li>Recherchez ce chiffre dans le <em>Tableau 1.1</em> pour obtenir une couleur.
+                    </ul>
+
+                    <h3>Étape 2 : Permutation de Séquence</h3>
+
+                    <ul>
+                        <li>En partant du "peg" avec 3 côtés ou plus de cette couleur et en tournant dans le sens horaire, lisez la couleur la plus à l'extérieur de chaque "peg" pour former une séquence de couleurs de longueur 5 ; c'est la séquence actuelle.
+                        <li>Déterminer la colonne du <em>Tableau 1.2</em> à utiliser.
+                        <li>Pour chaque entrée de la colonne correspondante :
+                            <ul>
+                                <li>Si la séquence principale est présente dans la séquence courante, remplacez la première occurrence par la séquence alternative pour former la nouvelle séquence courante.
+                                <li>Sinon, si l'inverse de la séquence principale est présent, remplacez la dernière occurrence par l'inverse de la séquence alternative.
+                            </ul>
+                        <li>Enfin, prenez les trois premières couleurs de la séquence courante pour obtenir la séquence de touches.
+                    </ul>
+
+                    <h3>Étape 3 : Séquence de touches</h3>
+
+                    <ul>
+                        <li>Inclinez la bombe avec un "peg" près de vous et au centre de votre champ de vision, puis observez les cinq couleurs qui vous font face en ligne ; c'est la séquence candidate pour cette vue.
+                        <li>La séquence de touches est présente dans l'une des cinq séquences candidates exactement une fois, soit en avant, soit en arrière.
+                        <li>Repérez la séquence candidate qui contient la séquence de touches et appuyez sur les 3 "peg" représentant la séquence de touches dans l'ordre.
+                        <li>Si la séquence de touches est la même en arrière qu'en avant, vous pouvez appuyer sur les trois "peg" en avant ou en arrière.
+                    </ul>
+				</div>
+				<div class="page-footer relative-footer">Page 1 sur 2</div>
+			</div>
+
+			<div class="page page-bg-05">
+				<div class="page-header">
+					<span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+					<span class="page-header-section-title">Perspective Pegs</span>
+				</div>
+				<div class="page-content">
+
+                    <h4>Tableau 1.1 Couleur des touches</h4>
+
+                    <p>Considérez que la différence entre les positions alphabétiques est positive.
+                    <p>Prenez le chiffre le moins significatif du chiffre et regardez dans le tableau :
+
+                    <table>
+                        <col class='number'><col class='number'><col class='color'><col class='sep'><col class='number'><col class='number'><col class='color'>
+                        <tr><td class='number'>0<td class='number'>3<td>Rouge   <td class='sep'>    <td class='number'>5<td class='number'>8<td>Bleu      </tr>
+                        <tr><td class='number'>4<td class='number'>9<td>Jaune<td class='sep'>    <td class='number'>2<td class='number'>6<td>Violet    </tr>
+                        <tr><td class='number'>1<td class='number'>7<td>Vert <td class='sep'>    </tr>
+                    </table>
+
+                    <h4>Tableau 1.2 Permutation de séquence</h4>
+
+                    <p>R – Rouge, Y – Jaune, G – Vert, B – Bleu, P – Violet</p>
+                    <p>Déterminez la colonne à utiliser en fonction du nombre de piles.
+                    <p>Effectuez les permutations de haut en bas :
+
+                    <table>
+                        <col class='sequence'><col class='sequence'><col class='sep'>
+                        <col class='sequence'><col class='sequence'><col class='sep'>
+                        <col class='sequence'><col class='sequence'>
+                        <tr>
+                            <th colspan=2>1 – 2 Piles
+                            <td class='sep'>
+                            <th colspan=2>3 – 4 Piles
+                            <td class='sep'>
+                            <th colspan=2>0, 5+ Piles
+                        </tr>
+                        <tr>
+                            <td class='subhead'>Pricipale
+                            <td class='subhead'>Alternative
+                            <td class='sep'>
+                            <td class='subhead'>Pricipale
+                            <td class='subhead'>Alternative
+                            <td class='sep'>
+                            <td class='subhead'>Pricipale
+                            <td class='subhead'>Alternative
+                        </tr>
+                        <tr>
+                            <td class='sequence'>R&nbsp;Y&nbsp;Y
+                            <td class='sequence'>B&nbsp;P&nbsp;Y
+                            <td class='sep'>
+                            <td class='sequence'>B&nbsp;P&nbsp;B
+                            <td class='sequence'>Y&nbsp;B&nbsp;G
+                            <td class='sep'>
+                            <td class='sequence'>P&nbsp;Y&nbsp;B
+                            <td class='sequence'>R&nbsp;G&nbsp;B
+                        </tr>
+                        <tr>
+                            <td class='sequence'>Y&nbsp;P&nbsp;G
+                            <td class='sequence'>P&nbsp;B&nbsp;R
+                            <td class='sep'>
+                            <td class='sequence'>Y&nbsp;Y&nbsp;P
+                            <td class='sequence'>B&nbsp;R&nbsp;P
+                            <td class='sep'>
+                            <td class='sequence'>Y&nbsp;R&nbsp;P
+                            <td class='sequence'>R&nbsp;Y&nbsp;R
+                        </tr>
+                        <tr>
+                            <td class='sequence'>R&nbsp;G&nbsp;P
+                            <td class='sequence'>B&nbsp;G&nbsp;R
+                            <td class='sep'>
+                            <td class='sequence'>G&nbsp;R&nbsp;B
+                            <td class='sequence'>Y&nbsp;P&nbsp;B
+                            <td class='sep'>
+                            <td class='sequence'>G&nbsp;Y&nbsp;R
+                            <td class='sequence'>G&nbsp;B&nbsp;P
+                        </tr>
+                        <tr>
+                            <td class='sequence'>Y&nbsp;B&nbsp;G
+                            <td class='sequence'>B&nbsp;Y&nbsp;Y
+                            <td class='sep'>
+                            <td class='sequence'>R&nbsp;P&nbsp;Y
+                            <td class='sequence'>G&nbsp;B&nbsp;G
+                            <td class='sep'>
+                            <td class='sequence'>B&nbsp;Y&nbsp;G
+                            <td class='sequence'>P&nbsp;G&nbsp;R
+                        </tr>
+                        <tr>
+                            <td class='sequence'>P&nbsp;P&nbsp;R
+                            <td class='sequence'>R&nbsp;Y&nbsp;P
+                            <td class='sep'>
+                            <td class='sequence'>Y&nbsp;G&nbsp;G
+                            <td class='sequence'>P&nbsp;B&nbsp;R
+                            <td class='sep'>
+                            <td class='sequence'>R&nbsp;P&nbsp;Y
+                            <td class='sequence'>G&nbsp;Y&nbsp;B
+                        </tr>
+                        <tr>
+                            <td class='sequence'>B&nbsp;G&nbsp;B
+                            <td class='sequence'>P&nbsp;Y&nbsp;G
+                            <td class='sep'>
+                            <td class='sequence'>G&nbsp;P&nbsp;B
+                            <td class='sequence'>Y&nbsp;G&nbsp;Y
+                            <td class='sep'>
+                            <td class='sequence'>P&nbsp;P&nbsp;G
+                            <td class='sequence'>P&nbsp;B&nbsp;R
+                        </tr>
+                        <tr>
+                            <td class='sequence'>Y&nbsp;G&nbsp;B
+                            <td class='sequence'>G&nbsp;P&nbsp;Y
+                            <td class='sep'>
+                            <td class='sequence'>P&nbsp;R&nbsp;P
+                            <td class='sequence'>B&nbsp;B&nbsp;G
+                            <td class='sep'>
+                            <td class='sequence'>R&nbsp;Y&nbsp;Y
+                            <td class='sequence'>B&nbsp;B&nbsp;R
+                        </tr>
+                        <tr>
+                            <td class='sequence'>P&nbsp;G&nbsp;G
+                            <td class='sequence'>G&nbsp;Y&nbsp;R
+                            <td class='sep'>
+                            <td class='sequence'>R&nbsp;Y&nbsp;R
+                            <td class='sequence'>R&nbsp;P&nbsp;B
+                            <td class='sep'>
+                            <td class='sequence'>Y&nbsp;G&nbsp;P
+                            <td class='sequence'>P&nbsp;Y&nbsp;Y
+                        </tr>
+                    </table>
+
+				</div>
+				<div class="page-footer relative-footer">Page 2 sur 2</div>
+			</div>
+		</div>
+	</body>
+</html>
