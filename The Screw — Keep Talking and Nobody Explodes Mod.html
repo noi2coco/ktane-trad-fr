@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Screw — Keep Talking and Nobody Explodes Mod</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+    <style>
+        .boxed {
+            border: 3px solid black;
+            padding-left: 3px;
+            line-height: 105%;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">The Screw</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/The Screw.svg" class="diagram">
+                <h2>À propos de « The Screw »</h2>
+                <p class="flavour-text">
+                    Vous savez quoi ? Au diable ce module...
+                </p>
+
+                <ul>
+                    <li>Ce module dispose de 4 boutons étiquetés A, B, C et D.</li>
+                    <li>6 trous aux contours colorés sont situés sous les boutons.</li>
+                    <li>Les fonctions des boutons changent en fonction du trou dans lequel se trouve la vis.</li>
+                    <li>Appuyer sur un bouton incorrect entraînera une erreur. Cependant, visser une vis dans le mauvais trou n'entraînera pas immédiatement une erreur, vous pouvez changer la position de la vis en toute sécurité avant d'appuyer sur un bouton.</li>
+                    <li>Les boutons n'avancent pas vers la résolution du module et ne donnent pas d'erreur si aucune vis n'est insérée dans l'un des trous.</li>
+                    <li>Au début de la bombe, la vis est toujours dans le trou supérieur gauche.</li>
+                    <li>Pour terminer une étape, vous devez retirer la vis du trou actuel, la visser dans le trou correct suivant, puis appuyer sur le bon bouton.</li>
+                    <li>L'écran en haut à gauche du module montre l'étape actuelle du module.</li>
+                    <li>Une fois les trois étapes résolues, le module se désarme.</li>
+                </ul>
+
+                <h3>Tout d'abord, déterminez dans quel trou de couleur la vis doit aller.</h3>
+                <ul>
+                    <li>Les contours colorés sont numérotés dans l'ordre de lecture de 1 à 6.</li>
+                    <li>La position du trou de la première étape est déterminée par le nombre de piles et le nombre d'indicateurs non allumés.</li>
+                    <li>La position du trou de la deuxième étape est déterminée par le chiffre le plus à droite du numéro de série plus le nombre d'indicateurs allumés.</li>
+                    <li>La position des trous du troisième étage est déterminée par le nombre de ports plus le nombre de porte-piles.</li>
+                    <li>Si le trou correct a déjà été occupé par la vis lors de l'étape précédente, le trou correct est en fait le trou suivant dans l'ordre numérique.</li>
+                    <li>Si une valeur est égale ou supérieure à 7, soustraire 6 jusqu'à ce que la valeur soit comprise entre 1 et 6. Si une valeur est 0, la valeur réelle est 1.</li>
+                </ul>
+            </div>
+            <div class="page-footer relative-footer">Page 1 sur 2</div>
+        </div>
+
+        <div class="page page-bg-04">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">The Screw</span>
+            </div>
+            <div class="page-content">
+
+                <h3>Ensuite, déterminez quel bouton doit être pressé pour avancer en utilisant les listes suivantes :</h3>
+                <div class="boxed">
+                    <h3>La couleur du contour est rouge, jaune ou vert :</h3>
+                    <h4>Si le trou est dans la rangée du haut :</h4>
+                    <ul>
+                        <li>Si la position du trou dans la rangée est égale au nombre de porte-piles, appuyez sur le bouton en quatrième position.</li>
+                        <li>Sinon, si la lettre A est en première ou troisième position, appuyez sur le bouton marqué C.</li>
+                        <li>Sinon, si la bombe a un indicateur CLR, FRK ou TRN, appuyez sur le bouton en troisième position.</li>
+                        <li>Sinon, si le trou partage la même rangée que le trou bleu, appuyez sur le bouton en première position.</li>
+                        <li>Sinon, appuyez sur le bouton marqué B.</li>
+                    </ul>
+
+                    <h4>Si le trou est dans la rangée du bas :</h4>
+                    <ul>
+                        <li>Si la position du trou dans la rangée est égale au nombre de types de ports, appuyez sur le bouton en deuxième position.</li>
+                        <li>Sinon, si la position du trou dans la rangée est égale au nombre de piles, appuyez sur le bouton marqué D.</li>
+                        <li>Sinon, si le trou n'est pas verticalement opposé au trou blanc, appuyez sur le bouton marqué A.</li>
+                        <li>Sinon, si le trou est horizontalement adjacent au trou magenta, appuyez sur le bouton marqué C.</li>
+                        <li>Sinon, appuyez sur le bouton en première position.</li>
+                    </ul>
+
+                    <h3>La couleur du contour est bleu, magenta ou blanc :</h3>
+                    <h4>Si le trou est dans la rangée du haut :</h4>
+                    <ul>
+                        <li>Si la position du trou dans la rangée est égale au nombre de types de ports, appuyez sur le bouton marqué D.</li>
+                        <li>Sinon, si la lettre C est en deuxième ou quatrième position, appuyez sur le bouton marqué B.</li>
+                        <li>Sinon, si la bombe a un indicateur CAR, FRQ ou SND, appuyez sur le bouton en quatrième position.</li>
+                        <li>Sinon, si le trou partage la même rangée que le trou rouge, appuyez sur le bouton en deuxième position.</li>
+                        <li>Sinon, appuyez sur le bouton marqué A.</li>
+                    </ul>
+
+                    <h4>Si le trou est dans la rangée du bas :</h4>
+                    <ul>
+                        <li>Si la position du trou dans la rangée est égale au nombre de plaques de port, appuyez sur le bouton en deuxième position.</li>
+                        <li>Sinon, si la position du trou dans la rangée est égale au nombre total d'indicateurs, appuyez sur le bouton marqué A.</li>
+                        <li>Sinon, si le trou est horizontalement adjacent au trou jaune, appuyez sur le bouton marqué C.</li>
+                        <li>Sinon, si le trou n'est pas verticalement opposé au trou vert, appuyez sur le bouton marqué D.</li>
+                        <li>Sinon, appuyez sur le bouton en quatrième position.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer relative-footer">Page 2 sur 2</div>
+        </div>
+    </div>
+</body>
+</html>
