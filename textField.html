@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>Text Field — Keep Talking and Nobody Explodes Module</title>
+    <meta content="initial-scale=1" name="viewport">
+    <link rel='stylesheet' type='text/css' href='css/font.css'>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src='js/ktane-utils.js'></script>
+    <style>
+        .tf-rule-column {
+            float: left;
+            width: 50%;
+        }
+        .tf-rule-column ul {
+            margin: .1em;
+            list-style-type: none;
+            padding-left: 1.5em;
+        }
+        .tf-rule-column li {
+            position: relative;
+        }
+        .tf-rule-column li:before {
+            position: absolute;
+            left: -1.5em;
+            content: '—';
+        }
+        h4 {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Text Field</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Text Field.svg" class="diagram">
+                <h2>À propos de «&nbspText Field&nbsp»</h2>
+                <p class="flavour-text">
+                    C'est trivial. Il n'y a que 6 lettres ! Attends, qu'est-ce que tu as dit ? Chaque lettre a 5 règles à vérifier ? Oublie ça, alors.
+                <ul>
+                    <li>Ce module contient un champ de 3×4 lettres. Toutes les lettres dans le champ sont les mêmes et dans la plage A-F.
+                    <li>En vous basant sur la lettre, consultez la <b>Section A</b> et suivez les règles de cette lettre de haut en bas. Obtenez un nom de table à partir de la première règle qui s'applique.
+                    <li>Trouvez le tableau correspondant dans la <b>Section B</b> via l'étape précédente.
+                    <li>Sélectionnez toutes les lettres du champ correspondant au tableau. Le module est désarmé lorsqu'elles ont toutes été sélectionnées.
+                    <li><b>Attention : appuyer sur un bouton avant que le voyant ne s'allume ou plusieurs fois sur le même bouton entraînera une erreur !</b>
+                </ul>
+                <p class="appendix-reference">Voir l'Annexe A pour la référence d'identification des indicateurs.<br />Voir l'annexe C pour la référence d'identification des ports.
+				
+				<p> Ci-dessous # fait référence au numéro de série
+
+                <p class="Section A">
+                <h3>Section A: Règles des lettres</h3>
+                <div class='tf-rule-column'>
+                    <h4>Lettre A</h4>
+                    <ul>
+                        <li>Indicateur CLR allumé : 1459
+                        <li>Plus de 2 piles : BBFF
+                        <li>Exactement 1 pile : 7F67
+                        <li>Indicateur FRK allumé : DC52
+                        <li>Sinon : A0C1
+                    </ul>
+                    <h4>Lettre B</h4>
+                    <ul>
+                        <li>Pas de pile : 965A
+                        <li>Dernier chiffre du # impair : 1459
+                        <li>Pas de port Série: DC52
+                        <li>Indicateur TRN allumé : A0C1
+                        <li>Sinon : 7F67
+                    </ul>
+                    <h4>Lettre C</h4>
+                    <ul>
+                        <li>Port DVI-D présent : AA12
+                        <li>Exactement 2 piles : FB01
+                        <li>Pas de voyelles dans le # : DC52
+                        <li>Indicateur CAR allumé : 1459
+                        <li>Sinon : 7F67
+                    </ul>
+                </div>
+                <div class='tf-rule-column'>
+                    <h4>Lettre D</h4>
+                    <ul>
+                        <li>Port Parallèle présent : FB01
+                        <li>Moins de 2 piles : AA12
+                        <li>Indicateur SIG allumé : BBFF
+                        <li>Pas de port PS/2 : 965A
+                        <li>Sinon : 1459
+                    </ul>
+                    <h4>Lettre E</h4>
+                    <ul>
+                        <li>Moins de 3 piles : 7F67
+                        <li>Pas de port Stéréo RCA : AA12
+                        <li>Indicateur BOB allumé : A0C1
+                        <li>Port RJ-45 présent : BBFF
+                        <li>Sinon : DC52
+                    </ul>
+                    <h4>Lettre F</h4>
+                    <ul>
+                        <li>Pas de port Série : DC52
+                        <li>Au moins 1 voyelle dans le # : A0C1
+                        <li>Indicateur IND allumé : 1459
+                        <li>Dernier chiffre du # pair : FB01
+                        <li>Sinon : AA12
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer relative-footer">Page 1 sur 2</div>
+        </div>
+        <div class="page page-bg-02">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Text Field</span>
+            </div>
+            <div class="page-content">
+                <h3>Section B: Liste des tables</h3>
+                <div class='tf-rule-column'>
+                    <h4>Table FB01</h4>
+                    <table>
+                        <tr><td>D</td><td>C</td><td>F</td><td>A</td></tr>
+                        <tr><td>B</td><td>E</td><td>F</td><td>F</td></tr>
+                        <tr><td>B</td><td>B</td><td>B</td><td>C</td></tr>
+                    </table>
+
+                    <h4>Table 965A</h4>
+                    <table>
+                        <tr><td>C</td><td>B</td><td>E</td><td>F</td></tr>
+                        <tr><td>E</td><td>B</td><td>F</td><td>E</td></tr>
+                        <tr><td>D</td><td>C</td><td>A</td><td>A</td></tr>
+                    </table>
+
+                    <h4>Table 1459</h4>
+                    <table>
+                        <tr><td>B</td><td>A</td><td>B</td><td>B</td></tr>
+                        <tr><td>C</td><td>D</td><td>F</td><td>D</td></tr>
+                        <tr><td>D</td><td>F</td><td>C</td><td>E</td></tr>
+                    </table>
+
+                    <h4>Table BBFF</h4>
+                    <table>
+                        <tr><td>D</td><td>A</td><td>B</td><td>F</td></tr>
+                        <tr><td>D</td><td>F</td><td>B</td><td>E</td></tr>
+                        <tr><td>C</td><td>E</td><td>B</td><td>A</td></tr>
+                    </table>
+                </div>
+                <div class='tf-rule-column'>
+                    <h4>Table DC52</h4>
+                    <table>
+                        <tr><td>C</td><td>B</td><td>D</td><td>E</td></tr>
+                        <tr><td>A</td><td>F</td><td>D</td><td>C</td></tr>
+                        <tr><td>B</td><td>E</td><td>B</td><td>D</td></tr>
+                    </table>
+
+                    <h4>Table 7F67</h4>
+                    <table>
+                        <tr><td>A</td><td>D</td><td>C</td><td>B</td></tr>
+                        <tr><td>A</td><td>C</td><td>B</td><td>C</td></tr>
+                        <tr><td>A</td><td>E</td><td>F</td><td>A</td></tr>
+                    </table>
+
+                    <h4>Table A0C1</h4>
+                    <table>
+                        <tr><td>E</td><td>C</td><td>F</td><td>A</td></tr>
+                        <tr><td>C</td><td>F</td><td>B</td><td>D</td></tr>
+                        <tr><td>F</td><td>F</td><td>B</td><td>C</td></tr>
+                    </table>
+
+                    <h4>Table AA12</h4>
+                    <table>
+                        <tr><td>B</td><td>E</td><td>A</td><td>B</td></tr>
+                        <tr><td>E</td><td>D</td><td>F</td><td>A</td></tr>
+                        <tr><td>B</td><td>C</td><td>E</td><td>C</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="page-footer relative-footer">Page 2 sur 2</div>
+        </div>
+    </div>
+</body>
+</html>
