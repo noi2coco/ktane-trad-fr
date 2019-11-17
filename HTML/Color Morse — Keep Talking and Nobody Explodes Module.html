@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>Color Morse — Keep Talking and Nobody Explodes Module</title>
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type='text/css' href="css/font.css">
+        <script src='js/ktane-utils.js'></script>
+    </head>
+    <body>
+        <div id="ManualContent">
+            <div class="section">
+                <div class="page page-bg-01">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">Color Morse</span>
+                    </div>
+                    <div class="page-content">
+                        <img src="img/Component/Color Morse.svg" class="diagram">
+                        <h2>À propos de «&nbsp;Color Morse&nbsp;»</h2>
+                        <p class="flavour-text">--&nbsp;.-&nbsp;-&nbsp;.... / ..&nbsp;... / ..-.&nbsp;..-&nbsp;-.&nbsp;!</p>
+                        <ul>
+                            <li>Il y a trois lumières clignotantes de couleurs différentes ainsi que des opérations et des parenthèses qui les entourent.</li>
+                            <li>Chaque lumière clignotante affiche un seul chiffre/lettre en code Morse. S'il affiche une lettre, considérez-la comme un nombre dont la valeur est égale à la position numérique de la lettre dans l'alphabet plus 9 (A=10, B=11, etc.).</li>
+                            <li>Pour chaque nombre, appliquez l'opération spéciale de la couleur trouvée dans le tableau ci-dessous qui correspond à la couleur de la lumière pour ce nombre. Si la couleur de la lumière est blanche, ne faites rien au nombre.</li>
+                            <li>Utilisez les (potentiellement) nouveaux nombres à la place des lumières dans l'expression mathématique pour obtenir un seul résultat.
+                                <ul>
+                                    <li>Si le résultat est négatif, assurez-vous d'envoyer un trait d'union avant le reste du numéro.</li>
+                                    <li>Si le résultat n'est pas un entier, ne considérez que la partie entière du nombre.</li>
+                                    <li>Si la valeur absolue du résultat est supérieure à 999, ne considérez que les trois chiffres les moins significatifs.</li>
+                                    <li>Si plus d'une des règles précédentes s'appliquent, appliquez-les dans l'ordre et ne tenez pas compte des zéros non significatifs.</li>
+                                </ul>
+                            </li>
+                            <li>À l'aide des touches, entrez le résultat en code Morse en utilisant la touche vide comme séparateur de chiffres.</li>
+                            <li>Lors d'une erreur, tous les caractères que vous avez entrés jusqu'à présent sont réinitialisés.</li>
+                        </ul>
+                        <table>
+                            <thead><tr>
+                                <td><b>Couleur</b></td>
+                                <td><b>Action</b></td>
+                            </tr></thead>
+                            <tr>
+                                <td>Rouge</td>
+                                <td>Si le nombre est impair, doublez-le. Sinon, divisez-le par deux.</td>
+                            </tr>
+                            <tr>
+                                <td>Orange</td>
+                                <td>Si le nombre est divisible par 3, divisez par 3. Sinon, ajoutez le nombre de lumières qui clignotent avec une des couleurs primaires*.</td>
+                            </tr>
+                            <tr>
+                                <td>Jaune</td>
+                                <td>Élevez le nombre au carré.</td>
+                            </tr>
+                            <tr>
+                                <td>Vert</td>
+                                <td>Changez la position des parenthèses pour qu'elles soient autour de la 2<sup>e</sup> et 3<sup>e</sup> lumière si elles sont autour de la 1<sup>re</sup> et 2<sup>e</sup> lumière, ou vice versa.</td>
+                            </tr>
+                            <tr>
+                                <td>Bleu</td>
+                                <td>Tripler le nombre et prendre la racine numérique jusqu'à ce que le nombre soit à un seul chiffre**.</td>
+                            </tr>
+                            <tr>
+                                <td>Violet</td>
+                                <td>Soustrayez le nombre de 10</td>
+                            </tr>
+                        </table>
+						<br>
+                        <p>* Les couleurs primaires sont le rouge, le bleu et le jaune.</p>
+                        <p>** La racine numérique d'un nombre est la somme de tous ses chiffres.</p>
+                    </div>
+                   <div class="page-footer relative-footer">Page 1 sur 2</div>
+                </div>
+                <div class="page page-bg-02">
+                    <div class="page-header">
+                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                        <span class="page-header-section-title">Color Morse</span>
+                    </div>
+                    <div class="page-content">
+                        <h3><b>Référence du Code Morse Code</b></h3>
+                        <p style="text-align:center">
+                            <img style="width:75%" src="img/Color Morse/Morse Reference.svg"></img>
+                        </p>
+                    </div>
+                   <div class="page-footer relative-footer">Page 2 sur 2</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
