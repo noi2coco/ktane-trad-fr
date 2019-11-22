@@ -1,0 +1,202 @@
+<!DOCTYPE html><html class="no-js"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Monsplode Trading Cards — Keep Talking and Nobody Explodes Module</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style>
+        .indented {
+            padding-left: 20pt;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: .2em .7em;
+            margin-bottom: 1em;
+        }
+        .explanation {
+            margin: 2em 0;
+        }
+            .explanation p {
+                margin: .5em 0;
+            }
+
+        .initial-value {
+            width: 100%;
+        }
+            .initial-value th {
+                text-align: left;
+            }
+    </style>
+    <script src="js/ktane-utils.js"></script>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Monsplode Trading Cards</span>
+            </div>
+            <div class="page-content">
+                <img class="diagram" src="img/Component/Monsplode Trading Cards.svg">
+                <h2>À propos de «&nbsp;Monsplode Trading Cards&nbsp;»</h2>
+                <p class="flavour-text">Un Bob dans la main vaut deux dans... le Buhar ?</p>
+                <ul>
+                    <li>Sur la base des 3 cartes à échanger Monsplode™ que vous avez en main, acceptez ou refusez correctement 3 offres d'échange en utilisant les boutons «&nbsp;Keep&nbsp;» et «&nbsp;Trade&nbsp;» au-dessus des cartes.
+                    </li><li>Chaque carte affichera un Monsplode, un symbole de rareté et une version imprimable.
+                    </li><li>Votre main est montrée à gauche. Parcourez les cartes à l'aide des boutons gauche/droite afin de sélectionner celle que vous souhaitez échanger. L'offre est montrée à droite.
+                    </li><li>Une action incorrecte entraînera une erreur, mais si vous avez tenté un échange, vous conserverez la carte que vous avez reçue pendant cette action.
+                </li></ul>
+                <h3>Calcul de la rareté d'une carte</h3>
+                <div class="box">
+                    <p>
+                        <b>1.</b> <em>Identifiez la valeur initiale de la carte :</em> À l'aide du «&nbsp;Tableau de référence des valeurs initiales&nbsp;», trouvez la ligne qui contient votre nom de Monsplode™. Déterminez dans lequel des formats suivants les deux premiers caractères du numéro de série de la bombe se trouvent :
+                        <b>XX</b>&nbsp;&nbsp;(e.g. KT, NE),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <b>X#</b>&nbsp;&nbsp;(e.g. C4, H8),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <b>#X</b>&nbsp;&nbsp;(e.g. 2A, 5D),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <b>##</b>&nbsp;&nbsp;(e.g. 20, 17)<br> Vous obtiendrez ainsi la valeur initiale de votre carte.
+                    </p>
+                    <p>
+                        <b>2.</b> <em>Ajustez la valeur de la carte :</em> Regardez la «&nbsp;Version imprimée&nbsp;» sur le côté gauche de la carte. Pour chaque indicateur sur la bombe qui contient la lettre de la version imprimée, <b>ajoutez 1</b> à la valeur de la carte s'il est allumé et <b>soustrayez 1</b> s'il est éteint. Continuez d'ajuster la valeur de la carte selon les règles ci-dessous :
+                    </p>
+                    <p>
+						Si la bombe n'a <b>pas de piles</b>, <b>conservez la valeur actuelle de la carte</b>.<br>
+                        Sinon, si le chiffre de la version imprimée est <b>supérieur</b> au nombre de piles de la bombe, <b>ajoutez 1</b> à la valeur actuelle de la carte.<br>
+                        Sinon, si le chiffre de la version imprimée est <b>inférieur</b> à la quantité de piles de la bombe,<b>soustrayez 1</b> à la valeur actuelle de la carte.<br>
+                        Sinon, <b>ajoutez 2</b> à la valeur actuelle de la carte.
+                    </p>
+                    <p>
+                        Si le chiffre de la version imprimée est égal à la position alphabétique de sa lettre, la carte est une contrefaçon et a une valeur 0. Ceci passe en <b>priorité</b>.
+                    </p>
+                </div>
+            </div>
+            <div class="page-footer relative-footer">Page 1 sur 3</div>
+        </div>
+    <div class="page page-bg-03">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+            <span class="page-header-section-title">Monsplode Trading Cards</span>
+        </div>
+        <div class="page-content">
+            <br>
+            <div class="box">
+                <p>
+                    <b>3.</b> <em>Calculez le multiplicateur :</em> Utilisez les règles ci-dessous basées sur le symbole dans le coin inférieur gauche de la carte et le «&nbsp;Tableau de référence des symboles de rareté&nbsp;» :
+                </p>
+                <p>
+                    Si la carte est <b>Courante</b>, le multiplicateur est <b>1</b>.<br>
+                    Sinon, si la carte est <b>Inhabituelle</b>, le multiplicateur est <b>1,25</b>.<br>
+                    Sinon, si la carte est <b>Rare</b>, le multiplicateur est <b>1,5</b>.<br>
+                    Sinon, si la carte est <b>Ultra Rare</b>, le multiplicateur est <b>1,75</b>.<br>
+                    Si la carte est <b>clinquante</b> (avec des taches brillantes), <b>ajoutez 0,5</b> au multiplicateur.<br>
+                    Pour <b>chaque coin plié</b> de la carte <b>enlevez 0,25</b> au multiplicateur.
+                </p>
+            </div>
+            <div class="explanation">
+                <p>Multipliez la valeur ajustée de la carte par le multiplicateur calculé. 
+                </p><p>Si la valeur de la carte est un nombre négatif, elle a <b>la valeur 0</b>.
+                </p><p>Si toutes vos cartes ont une valeur supérieure à celle de la carte proposée, appuyez sur <b>«&nbsp;Keep&nbsp;»</b>.
+                </p><p>Sinon, échangez votre <b><em>carte la moins valorisée</em></b> en appuyant sur <b>«&nbsp;Échanger&nbsp;»</b>.
+                </p><p>S'il y a plusieurs cartes avec le moins de valeur, vous pouvez échanger <b>n'importe laquelle d'entre elles</b>.
+            </p></div>
+            <h3>Tableau de référence des symboles de rareté</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <b>Courante</b>
+                        </td>
+                        <td>
+                            <b>Inhabituelle</b>
+                        </td>
+                        <td>
+                            <b>Rare</b>
+                        </td>
+                        <td>
+                            <b>Ultra Rare</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="middle">
+                            ●
+                        </td>
+                        <td align="middle">
+                            ♦
+                        </td>
+                        <td align="middle">
+                            ★
+                        </td>
+                        <td align="middle">
+                            ☆
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-footer relative-footer">Page 2 sur 3</div>
+    </div>
+
+    <div class="page page-bg-03">
+        <div class="page-header">
+            <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+            <span class="page-header-section-title">Monsplode Trading Cards</span>
+        </div>
+        <div class="page-content">
+            <h3>Tableau de référence des valeurs initiales</h3>
+            <h4>Kit de base</h4>
+            <table class="initial-value">
+                <tbody>
+                    <tr>
+                        <th>Monsplode™
+                        </th><th>XX
+                        </th><th>X#
+                        </th><th>#X
+                        </th><th>##
+                        </th><td>&nbsp;</td>
+                        <th>Monsplode™
+                        </th><th>XX
+                        </th><th>X#
+                        </th><th>#X
+                        </th><th>##
+                    </th></tr>
+                    <tr><td>Aluga    </td><td>2</td><td>3</td><td>4</td><td>2</td><td>&nbsp;</td><td>Magmy    </td><td>4</td><td>3</td><td>2</td><td>3
+                    </td></tr><tr><td>Asteran  </td><td>2</td><td>5</td><td>2</td><td>2</td><td>&nbsp;</td><td>Melbor   </td><td>2</td><td>4</td><td>4</td><td>3
+                    </td></tr><tr><td>Bob      </td><td>2</td><td>4</td><td>2</td><td>5</td><td>&nbsp;</td><td>Mountoise</td><td>2</td><td>4</td><td>3</td><td>3
+                    </td></tr><tr><td>Buhar    </td><td>5</td><td>2</td><td>2</td><td>3</td><td>&nbsp;</td><td>Myrchat  </td><td>2</td><td>2</td><td>4</td><td>3
+                    </td></tr><tr><td>Caadarim </td><td>2</td><td>4</td><td>3</td><td>2</td><td>&nbsp;</td><td>Nibs     </td><td>3</td><td>3</td><td>2</td><td>4
+                    </td></tr><tr><td>Clondar  </td><td>3</td><td>2</td><td>4</td><td>5</td><td>&nbsp;</td><td>Percy    </td><td>3</td><td>3</td><td>2</td><td>4
+                    </td></tr><tr><td>Cutie Pie</td><td>2</td><td>4</td><td>2</td><td>4</td><td>&nbsp;</td><td>Pouse    </td><td>2</td><td>3</td><td>3</td><td>3
+                    </td></tr><tr><td>Docsplode</td><td>2</td><td>4</td><td>2</td><td>5</td><td>&nbsp;</td><td>Ukkens   </td><td>4</td><td>2</td><td>3</td><td>3
+                    </td></tr><tr><td>Flaurim  </td><td>2</td><td>3</td><td>4</td><td>2</td><td>&nbsp;</td><td>Vellarim </td><td>4</td><td>2</td><td>3</td><td>2
+                    </td></tr><tr><td>Gloorim  </td><td>5</td><td>2</td><td>2</td><td>2</td><td>&nbsp;</td><td>Violan   </td><td>3</td><td>4</td><td>2</td><td>2
+                    </td></tr><tr><td>Lanaluff </td><td>2</td><td>3</td><td>4</td><td>3</td><td>&nbsp;</td><td>Zapra    </td><td>3</td><td>4</td><td>2</td><td>3
+                    </td></tr><tr><td>Lugirit  </td><td>3</td><td>3</td><td>3</td><td>2</td><td>&nbsp;</td><td>Zenlad   </td><td>4</td><td>2</td><td>2</td><td>4
+                </td></tr></tbody>
+            </table>
+            <h4>L'expansion du héros</h4>
+            <table class="initial-value">
+                <tbody>
+                    <tr>
+                        <th>Monsplode™
+                        </th><th>XX
+                        </th><th>X#
+                        </th><th>#X
+                        </th><th>##
+                        </th><td>&nbsp;</td>
+                        <th>Monsplode™
+                        </th><th>XX
+                        </th><th>X#
+                        </th><th>#X
+                        </th><th>##
+                    </th></tr>
+                    <tr><td>Aluga,<br>The Fighter   </td><td>6</td><td>4</td><td>5</td><td>3</td><td>&nbsp;</td><td>Buhar,<br>The Protector</td><td>6</td><td>5</td><td>3</td><td>4
+                    </td></tr><tr><td>Bob,<br>The Ancestor    </td><td>5</td><td>6</td><td>4</td><td>4</td><td>&nbsp;</td><td>Melbor,<br>The Web Bug </td><td>4</td><td>4</td><td>4</td><td>6
+                </td></tr></tbody>
+            </table>
+        </div>
+        <div class="page-footer relative-footer">Page 3 sur 3</div>
+    </div>
+  </div>
+</body></html>
