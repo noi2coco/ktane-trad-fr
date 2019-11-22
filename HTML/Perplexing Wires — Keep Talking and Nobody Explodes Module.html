@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Perplexing Wires — Keep Talking and Nobody Explodes Module</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link href='css/font.css' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src='js/ktane-utils.js'></script>
+    
+    <style>
+        .perplexing-wires {
+            width: 100%;
+            margin: 1em 0;
+        }
+
+        .footnote {
+            margin-top: 3em;
+            font-size: 10pt;
+        }
+
+            .footnote::before {
+                content: '';
+                display: block;
+                width: 20em;
+                border-top: 1px solid #888;
+                margin-bottom: 1em;
+            }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Perplexing Wires</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Perplexing Wires.svg" class="diagram">
+                <h2>À propos de «&nbsp;Perplexing Wires&nbsp;»</h2>
+                <p class="flavour-text">
+                    Complicated Wires n'est simplement pas assez compliqué.
+                </p>
+                <ul>
+                    <li>Regardez chaque fil : il y a un symbole "★" au-dessus du fil et une flèche sous le fil, ainsi que trois petites LED sur le côté.</li>
+                    <li>
+                        Pour <strong>chaque</strong> fil, utilisez le diagramme de Venn ci-dessous pour décider s'il faut couper le fil ou non.
+                        La signification des couleurs et des lettres dans le diagramme de Venn est décrite à la page suivante.
+                </ul>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-296 -315 604 604" style='width: 100%'><ellipse cx="20" cy="-46" rx="166" ry="264" stroke-width="3" stroke="#eb1414" fill="none" /><ellipse cx="20" cy="-46" rx="166" ry="264" fill="none" stroke-width="3" stroke="#ffb100" transform="rotate(72)" /><ellipse cx="20" cy="-46" rx="166" ry="264" transform="rotate(144)" stroke-width="3" stroke="#ee0" fill="none" /><ellipse cx="20" cy="-46" rx="166" ry="264" fill="none" stroke-width="3" stroke="#00be00" transform="rotate(216)" color="#000" overflow="visible" /><ellipse cx="20" cy="-46" rx="166" ry="264" transform="rotate(288)" stroke-width="3" stroke="#09f" fill="none" color="#000" overflow="visible" /><g text-anchor="middle" font-family="Special Elite" font-size="32"><text x="87.8" y="165.1">B</text><text x="53.2" y="205.3">C</text><text x="-21.1" y="170.1">Q</text><text x="-7.8" y="207.2">H</text><text x="-34.9" y="228.6">I</text><text x="-111.7" y="151.8">J</text><text x="-167" y="122.9">L</text><text x="-192.2" y="62.5">R</text><text x="-157.6" y="43">B</text><text x="-216.1" y="44.3">V</text><text x="-158.8" y="-63.3">F</text><text x="-155.1" y="-116.2">P</text><text x="-112.3" y="-152">C</text><text x="-77.7" y="-130.7">H</text><text x="-97.8" y="-183.5">U</text><text x="13.6" y="-163.4">R</text><text x="68.9" y="-176.6">F</text><text x="122.4" y="-145.1">J</text><text x="106" y="-113">T</text><text x="160.8" y="-131.9">Q</text><text x="174" y="-28.7">W</text><text x="201" y="17.8">V</text><text x="149.4" y="78.2">P</text><text x="185.3" y="80.1">D</text><text x="180.3" y="126.7">U</text><text x="249.5" y="-36.9" font-size="64">T</text><text x="137.5" y="243.7" font-size="64">I</text><text x="-168.3" y="217.9" font-size="64">M</text><text x="-233.7" y="-75.9" font-size="64">W</text><text x="23" y="-238.2" font-size="64">I</text><text x="219.9" y="-220" font-size="64">L</text><text x="5.4" y="41.1" font-size="128">D</text></g></svg>
+            </div>
+            <div class="page-footer relative-footer">Page 1 sur 2</div>
+        </div>
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Perplexing Wires</span>
+            </div>
+            <div class="page-content">
+                <table class='perplexing-wires'>
+                    <tr><th>Rouge</th><th>Orange</th><th>Jaune</th><th>Vert</th><th>Bleu</th>
+                    <tr>
+                        <td>Le fil est rouge, jaune, bleu ou blanc.</td>
+                        <td>Le fil a la même couleur que sa flèche.</td>
+                        <td>L'étoile du fil est noire.</td>
+                        <td>La position du fil en bas est paire.</td>
+                        <td>Le fil croise un autre fil.<sup>[1]</sup></td>
+                    </tr>
+                </table>
+                <table class='perplexing-wires'>
+                    <tr><th>Lettre</th><th>Instruction</th>
+                    <tr><td>C</td><td>Coupez le fil.</td>
+                    <tr><td>F</td><td>Coupez toujours le fil, mais coupez-le en premier.</td>
+                    <tr><td>L</td><td>Coupez toujours le fil, mais coupez-le en dernier.</td>
+                    <tr><td>W</td><td>Coupez le fil s'il y a plus de DEL allumées qu'éteintes.</td>
+                    <tr><td>T</td><td>Coupez le fil si la LED supérieure est allumée.</td>
+                    <tr><td>U</td><td>Coupez le fil si sa flèche pointe vers le haut ou vers le bas.</td>
+                    <tr><td>M</td><td>Coupez le fil si la flèche pointe vers le bas ou vers la droite.</td>
+                    <tr><td>H</td><td>Coupez le fil si le fil a le même étoile qu'un autre fil.</td>
+                    <tr><td>P</td><td>Coupez le fil si sa position en bas est égale au nombre de ports.</td>
+                    <tr><td>B</td><td>Coupez le fil si sa position en bas est égale au nombre de piles.</td>
+                    <tr><td>I</td><td>Coupez le fil si sa position en bas est égale au nombre d'indicateurs.</td>
+                    <tr><td>Q</td><td>Coupez le fil si la couleur du fil est unique.</td>
+                    <tr><td>J</td><td>Coupez le fil si, en bas, il est adjacent à un fil orange ou violet.</td>
+                    <tr><td>V</td><td>Coupez le fil si le numéro de série a une voyelle, ou si la bombe a un port USB.</td>
+                    <tr><td>R</td><td>Coupez le fil si la direction de sa flèche est unique.</td>
+                    <tr><td>D</td><td>Ne coupez pas le fil.</td>
+                </table>
+                <p class='footnote'>
+                    [1] Plus précisément, deux fils sont considérés comme «&nbsp;croisés&nbsp;» si leurs connecteurs supérieurs (près des étoiles) sont dans l'ordre inverse de leurs connecteurs inférieurs (près des flèches).
+                </p>
+            </div>
+            <div class="page-footer relative-footer">Page 2 sur 2</div>
+        </div>
+    </div>
+</body>
+</html>
