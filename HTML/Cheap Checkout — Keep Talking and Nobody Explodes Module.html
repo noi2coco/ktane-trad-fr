@@ -237,7 +237,7 @@
 
                 const seededStrings = [
                     toRelativePercent(MondayPercent),
-					TuesdayExcludedDigit == -1 ? "" : ` en excluant le chiffre des ${["unités", "dizaines", "centaines"][TuesdayExcludedDigit]}`,
+                    TuesdayExcludedDigit == -1 ? "" : ` en excluant le chiffre des ${["unités", "dizaines", "centaines"][TuesdayExcludedDigit]}`,
                     WednesdayLargeOrSmall ? "grand" : "petit",
                     WednesdayLargeOrSmall ? "petit" : "grand",
                     WednesdayViceVersa ? ", et vice versa" : "",
@@ -245,7 +245,7 @@
                     toRelativePercent(ThursdayPercent),
                     toRelativePercent(FridayPercent),
                     toRelativePercent(SaturdayPercent),
-					toDollars(SundayValue)
+                    toDollars(SundayValue)
                 ];
 
                 const seededSpans = document.querySelectorAll("span.rule-seeded");
@@ -296,7 +296,7 @@
 
                     <h3 class="squished">Promotions :</h3>
                     <div style="font-style: italic; font-size: 13px;">Le jour de la semaine est la date indiquée sur l'ordinateur du désamorceur lorsque le module est activé.</div>
-					
+                    
                     <em>Lundi Libre</em>
                     <div class="sale">Les 1<sup>er</sup>, 3<sup>e</sup> et 6<sup>e</sup> articles de la liste d'achats coûtent <span class="rule-seeded">15%</span>.</div>
 
@@ -314,8 +314,8 @@
 
                     <em>Samedi Sucré</em>
                     <div class="sale">Toutes les sucreries coûtent <span class="rule-seeded">35% de moins</span>.</div>
-					
-					<em>Dimanche Distinct</em>
+                    
+                    <em>Dimanche Distinct</em>
                     <div class="sale">Tous les articles à prix fixe qui contiennent un S coûtent <span class="rule-seeded">2.15</span>$ de plus.</div>
 
                 </div>
@@ -335,7 +335,7 @@
                             <th>Prix</th>
                             <th>Catégorie</th>
                             <th class="borderless"></th>.
-							<th>Article</th>
+                            <th>Article</th>
                             <th>Prix</th>
                             <th>Catégorie</th>
                         </tr>

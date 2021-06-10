@@ -1,126 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-		<meta content="IE=edge" http-equiv="X-UA-Compatible">
-		<title>Mastermind Cruel — Keep Talking and Nobody Explodes Module</title>
-		<meta content="initial-scale=1" name="viewport">
-		<link rel='stylesheet' type='text/css' href='css/font.css'>
-		<link href="css/normalize.css" rel="stylesheet" type="text/css">
-		<link href="css/main.css" rel="stylesheet" type="text/css">
-		<script src='js/ktane-utils.js'></script>
-		<style>
-				ul, p {
-						margin: .5em 0;
-				}
-				ul {
-						padding-left: 1em;
-				}
-		</style>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <title>Mastermind Cruel — Keep Talking and Nobody Explodes Module</title>
+        <meta content="initial-scale=1" name="viewport">
+        <link rel='stylesheet' type='text/css' href='css/font.css'>
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <script src='js/ktane-utils.js'></script>
+        <style>
+                ul, p {
+                        margin: .5em 0;
+                }
+                ul {
+                        padding-left: 1em;
+                }
+        </style>
 </head>
 <body>
 <div class="section">
-		<div class="page page-bg-01">
-			<div class="page-header">
-				<span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-				<span class="page-header-section-title">Mastermind</span>
-			</div>
-			<div class="page-content">
-				<img src="img/Component/Mastermind Cruel.svg" class="diagram">
-				<h2>À propos de «&nbsp;Cruel Mastermind&nbsp;»</h2>
-				<p class="flavour-text">
-				Le jeu de votre enfance. Seulement plus avancé. Et plus difficile à mémoriser. Et la réponse n'est plus ce qu'elle était...
-				</p>
-				<ul>
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Mastermind</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Mastermind Cruel.svg" class="diagram">
+                <h2>À propos de «&nbsp;Cruel Mastermind&nbsp;»</h2>
+                <p class="flavour-text">
+                Le jeu de votre enfance. Seulement plus avancé. Et plus difficile à mémoriser. Et la réponse n'est plus ce qu'elle était...
+                </p>
+                <ul>
                 <li>Pour résoudre ce module, vous devez trouver le bon code de 5 couleurs.</li>
                 <li>Les couleurs utilisées dans ce module sont : Blanc, Magenta, Jaune, Vert, Rouge et Bleu.</li>
                 <li>Notez que chaque couleur peut être utilisée plusieurs fois.</li>
                 <li>Vous pouvez faire défiler les couleurs des DEL en cliquant sur les DEL.</li>
                 <li>En appuyant sur le bouton «&nbsp;Query&nbsp;», vous obtiendrez des informations sur le code actuellement entré.</li>
                 <li>Lorsque le bon code est entré, le module est résolu en appuyant sur le bouton «&nbsp;Submit&nbsp;». Soumettre le mauvais code déclenchera une erreur.</li>
-				</ul>
-			<p>Chaque requête génère deux chiffres sur l'écran. Ces nombres représentent chacun la somme <u>totale</u> de deux des valeurs énumérées dans le tableau ci-dessous.</p>
-			<p>A = Nombre de couleurs correctes en bonne position.
-			<br>B = Nombre de couleurs correctes en mauvaise position.
-			<br>C = Nombre de couleurs ne se trouvant pas dans la solution.</p>
-			<table class="repeaters-table">
-				<tbody>
-					<tr>
-						<th>Couleur sur l'écran :</th>
-						<th class="repeaters-spacer" colspan="1"></th>
-						<th>Numéro à gauche</th>
-						<th>Numéro à droite</th>
-					</tr>
-					<tr>
-						<th rowspan="2">Blanc</th>
-						<th>Couleur&nbsp;gauche&nbsp;:</th>
-						<td>A</td>
-						<td>B</td>
-					</tr>
-					<tr>
-						<th>Couleur&nbsp;droite&nbsp;:</th>
-						<td># de piles</td>
-						<td># de modules résolus</td>
-					</tr>
-					<tr>
-						<th rowspan="2">Magenta</th>
-						<th>Couleur&nbsp;gauche&nbsp;:</th>
-						<td>C</td>
-						<td>A</td>
-					</tr>
-					<tr>
-						<th>Couleur&nbsp;droite&nbsp;:</th>
-						<td># d'indicateurs allumés</td>
-						<td>Dernier chiffre du numéro de série</td>
-					</tr>
-					<tr>
-						<th rowspan="2">Jaune</th>
-						<th>Couleur&nbsp;gauche&nbsp;:</th>
-						<td>B</td>
-						<td>C</td>
-					</tr>
-					<tr>
-						<th>Couleur&nbsp;droite&nbsp;:</th>
-						<td>Somme de tous les chiffres du numéro de série</td>
-						<td># de ports</td>
-					</tr>
-					<tr>
-						<th rowspan="2">Vert</th>
-						<th>Couleur&nbsp;gauche&nbsp;:</th>
-						<td>B</td>
-						<td>A</td>
-					</tr>
-					<tr>
-						<th>Couleur&nbsp;droite&nbsp;:</th>
-						<td># de modules sur la bombe</td>
-						<td># d'indicateurs éteints</td>
-					</tr>
-					<tr>
-						<th rowspan="2">Rouge</th>
-						<th>Couleur&nbsp;gauche&nbsp;:</th>
-						<td>C</td>
-						<td>B</td>
-					</tr>
-					<tr>
-						<th>Couleur&nbsp;droite&nbsp;:</th>
-						<td># de ports distincts</td>
-						<td># d'erreurs</td>
-					</tr>
-					<tr>
-						<th rowspan="2">Bleu</th>
-						<th>Couleur&nbsp;gauche&nbsp;:</th>
-						<td>A</td>
-						<td>C</td>
-					</tr>
-					<tr>
-						<th>Couleur&nbsp;droite&nbsp;:</th>
-						<td>Premier chiffre du numéro de série</td>
-						<td># de porte-piles</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div class="page-footer relative-footer">Page 1 sur 1</div>
-		</div>
+                </ul>
+            <p>Chaque requête génère deux chiffres sur l'écran. Ces nombres représentent chacun la somme <u>totale</u> de deux des valeurs énumérées dans le tableau ci-dessous.</p>
+            <p>A = Nombre de couleurs correctes en bonne position.
+            <br>B = Nombre de couleurs correctes en mauvaise position.
+            <br>C = Nombre de couleurs ne se trouvant pas dans la solution.</p>
+            <table class="repeaters-table">
+                <tbody>
+                    <tr>
+                        <th>Couleur sur l'écran :</th>
+                        <th class="repeaters-spacer" colspan="1"></th>
+                        <th>Numéro à gauche</th>
+                        <th>Numéro à droite</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Blanc</th>
+                        <th>Couleur&nbsp;gauche&nbsp;:</th>
+                        <td>A</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <th>Couleur&nbsp;droite&nbsp;:</th>
+                        <td># de piles</td>
+                        <td># de modules résolus</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Magenta</th>
+                        <th>Couleur&nbsp;gauche&nbsp;:</th>
+                        <td>C</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <th>Couleur&nbsp;droite&nbsp;:</th>
+                        <td># d'indicateurs allumés</td>
+                        <td>Dernier chiffre du numéro de série</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Jaune</th>
+                        <th>Couleur&nbsp;gauche&nbsp;:</th>
+                        <td>B</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <th>Couleur&nbsp;droite&nbsp;:</th>
+                        <td>Somme de tous les chiffres du numéro de série</td>
+                        <td># de ports</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Vert</th>
+                        <th>Couleur&nbsp;gauche&nbsp;:</th>
+                        <td>B</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <th>Couleur&nbsp;droite&nbsp;:</th>
+                        <td># de modules sur la bombe</td>
+                        <td># d'indicateurs éteints</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Rouge</th>
+                        <th>Couleur&nbsp;gauche&nbsp;:</th>
+                        <td>C</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <th>Couleur&nbsp;droite&nbsp;:</th>
+                        <td># de ports distincts</td>
+                        <td># d'erreurs</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Bleu</th>
+                        <th>Couleur&nbsp;gauche&nbsp;:</th>
+                        <td>A</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <th>Couleur&nbsp;droite&nbsp;:</th>
+                        <td>Premier chiffre du numéro de série</td>
+                        <td># de porte-piles</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-footer relative-footer">Page 1 sur 1</div>
+        </div>
 </div>
 </body></html>
