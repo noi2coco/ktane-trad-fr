@@ -1,11 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Color Math — Keep Talking and Nobody Explodes Mod</title>
     <meta name="viewport" content="initial-scale=1">
-    <link rel='stylesheet' type='text/css' href='css/font.css'>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src='js/ktane-utils.js'></script>
@@ -24,20 +23,20 @@
             </div>
             <div class="page-content">
                 <img src="img/Component/Color Math.svg" class="diagram">
-                <h2>À propos de « Color Math »</h2>
+                <h2>À propos de "Color Math"</h2>
                 <p class="flavour-text">
-                    Tellement de couleurs !
+                    Tant de couleurs !
                 </p>
                 <ul>
-                    <li>Ce module contient 2 rangées de LEDs, à gauche (représente le numéro de base) et à droite (représente l'additionneur/soustracteur/multiplicateur/diviseur et/ou la réponse).</li>
-                    <li>Les nombres dans ce module vont de 0 à 999999 compris. Les LEDs sont lues de haut (chiffre le plus significatif) en bas (chiffre le moins significatif).</li>
-                    <li>Utilisez la Table 1 pour convertir les LEDs de gauche en nombre de base.</li>
-                    <li>L'écran au milieu de ce module indique l'action à effectuer : [A]dditionner /[S]oustraire / [M]ultiplier /[D]iviser.</li>
-                    <li>Si le texte à l'écran est VERT, utilisez la Table 2 pour convertir les LEDs de droite en additionneur/soustracteur/multiplicateur/diviseur.</li>
-                    <li>Si le texte à l'écran est ROUGE, ignorez les LEDS de droite, puis utilisez la Table 3 pour déterminer l'additionneur/soustracteur/multiplicateur/diviseur.</li>
-                    <li>Effectuez l'action requise et utilisez la Table 4 pour convertir la réponse en couleurs, puis saisissez-la sur les LEDs de droite. Appuyez sur «&nbspSUBMIT&nbsp» pour vérifier.</li>
+                    <li>Ce module contient 2 rangées de DELs, à gauche (représente le nombre de base) et à droite (représente l'additionneur / soustracteur / multiplicateur / diviseur et / ou la réponse).</li>
+                    <li>Les nombres de ce module sont compris entre 0 et 9999 inclus. Les DELs sont lues du haut (chiffre le plus significatif) vers le bas (chiffre le moins significatif).</li>
+                    <li>Utilisez le tableau 1 pour convertir les DELs de gauche en nombre.</li>
+                    <li>L'affichage au milieu de ce module montre l'action à effectuer : [A]jouter / [S]oustraire / [M]ultiplier / [D]iviser.</li>
+                    <li>Si l'affichage est VERT, utilisez le tableau 2 pour convertir les DELs de droite en un deuxième nombre.</li>
+                    <li>Si l'affichage est ROUGE, ignorez les DELs de droite et utilisez ensuite le tableau 3 pour déterminer le deuxième nombre.</li>
+                    <li>Effectuez l'action requise et avec le tableau 4, formez la réponse en couleurs sur les DELs de droite. Appuyez sur SUBMIT pour vérifier.</li>
                 </ul>
-                <h3>Table 1: Table de conversion des LEDs de gauche en chiffres</h3>
+                <h3>Tableau 1 : Conversion des DELs de gauche en chiffres</h3>
                 <table class='smaller'>
                     <tr>
                         <th>LED No.</th>
@@ -105,7 +104,7 @@
                         <td>2</td>
                     </tr>
                 </table>
-                <h3>Table 2: Table de conversion des LEDs de droite en chiffres</h3>
+                <h3>Tableau 2 : Conversion des DELs de droite en chiffres</h3>
                 <table class='smaller'>
                     <tr>
                         <th>LED No.</th>
@@ -182,25 +181,25 @@
                 <span class="page-header-section-title">Color Math</span>
             </div>
             <div class="page-content">
-                <h3>Table 3: Recherche d'ASMD en cas d'affichage rouge</h3>
+                <h3>Tableau 3 : Trouver l'ASMD en cas d'affichage rouge</h3>
                 <table>
                     <tr>
-                        <th>Chiffre No.</th>
-                        <th>0-1 Pile</th>
-                        <th>2-3 Piles</th>
-                        <th>4-5 Piles</th>
-                        <th>6+ Piles</th>
+                        <th>Chiffre #</th>
+                        <th>0-1 pile</th>
+                        <th>2-3 piles</th>
+                        <th>4-5 piles</th>
+                        <th>6+ piles</th>
                     </tr>
                     <tr>
-                        <td>1 (MSD)</td>
-                        <td>Premier chiffre du numéro de série</td>
+                        <td>1</td>
+                        <td>Premier chiffre # série</td>
                         <td>0</td>
-                        <td>Nombre de voyelles dans le numéro de série</td>
+                        <td>Nombre de voyelles dans # série</td>
                         <td>Nombre de ports DVI-D</td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Nombre d'indicateurs éteints</td>
+                        <td>Nombre d'ind. éteints</td>
                         <td>Nombre de ports PS/2</td>
                         <td>Nombre de porte-piles</td>
                         <td>5</td>
@@ -208,19 +207,19 @@
                     <tr>
                         <td>3</td>
                         <td>9</td>
-                        <td>Nombre de lettres dans le numéro de série</td>
+                        <td>Nombre de lettres # série</td>
                         <td>Nombre de ports Série</td>
-                        <td>Nombre de consonnes dans le numéro de série</td>
+                        <td>Nombre de consonnes # série</td>
                     </tr>
                     <tr>
-                        <td>4 (LSD)</td>
-                        <td>Nombre de ports RJ-45</td>
-                        <td>Dernier chiffre du numéro de série</td>
                         <td>4</td>
-                        <td>Nombre d'indicateurs allumés</td>
+                        <td>Nombre ports RJ-45</td>
+                        <td>Dernier chiffre # série</td>
+                        <td>4</td>
+                        <td>Nombre ind. allumés</td>
                     </tr>
                 </table>
-                <h3>Table 4: Réponse au tableau de conversion des couleurse</h3>
+                <h3>Tableau 4 : Conversion de la réponse en couleurs</h3>
                 <table>
                     <tr>
                         <th>LED No.</th>
@@ -307,9 +306,9 @@
                     </tr>
                 </table>
                 <ul>
-                    <li>Note: Pour la soustraction, si la réponse est négative, répondez comme si elle était positive.</li>
-                    <li>Note: Pour la division, si la réponse contient un reste, ignorez le reste.</li>
-                    <li>Note: Si la réponse dépasse 9999, veuillez diviser la réponse par 10000 et répondre par le reste. (Ou en bref, modulo 10000.)</li>
+                    <li>Note : à la soustraction, si la réponse est négative, transformez en positif.</li>
+                    <li>Note : sur la division, si la réponse contient un reste, ignorez le reste.</li>
+                    <li>Note : si la réponse dépasse 9999, veuillez diviser la réponse par 10000 et répondre avec le reste. (Ou, en bref, modulo 10000).</li>
                 </ul>
             </div>
             <div class="page-footer relative-footer">Page 2 sur 2</div>
