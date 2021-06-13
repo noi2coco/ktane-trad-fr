@@ -1,124 +1,121 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
     <title>Microcontroller — Keep Talking and Nobody Explodes Module</title>
-    <meta content="initial-scale=1" name="viewport">
-    <link rel='stylesheet' type='text/css' href='css/font.css'>
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <script src='js/ktane-utils.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
 </head>
 <body>
-    <div id="ManualContent">
-        <div class="section">
-            <div class="page">
-                <div class="page-header">
-                    <span class="page-header-doc-title">Keep Talking and Nobody Explodes</span>
-                    <span class="page-header-section-title">Microcontroller</span>
-                </div>
-                <div class="page-content">
-                    <img src="img/Component/Microcontroller.svg" class="diagram" />
-                    <h2>À propos de "Microcontrollers"</h2>
-                    <p class="flavour-text">Ça s'appelle un "micro"-contrôleur, mais ce truc là-dedans est assez gros. Probablement parce que ça peut causer une grosse explosion...</p>
-
-                    <ol>
-                        <li>Utilisez le type imprimé du contrôleur et sa taille pour déterminer la configuration des broches à l'aide des diagrammes ci-dessous.</li>
-                        <li>Le point blanc sur le contrôleur indique où se trouve la broche portant le chiffre 1. Les autres broches sont dans l'ordre croissant sur le côté avec le numéro 1, et dans l'ordre décroissant de l'autre côté.</li>
-                        <li>À l'aide du tableau ci-dessous, déterminez le code couleur correct pour chaque élément connecté.</li>
-                        <li>Pour chaque broche, choisissez l'élément correct en appuyant sur les boutons HAUT et BAS et en confirmant votre saisie avec le bouton OK (la broche suivante sera sélectionnée automatiquement).</li>
-                    </ol>
-
-                    <h3>Configurations des broches</h3>
-                    <p>Contrôleur d'erreur (STRK) :</p>
-                    <div id="floatalign">
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/a1.svg" />
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/a2.svg" />
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/a3.svg" />
-                    </div>
-                    <p>Contrôleur à diodes (LEDS) :</p>
-                    <div id="floatalign">
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/b2.svg" />
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/b1.svg" />
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/b3.svg" />
-                    </div>
-                    <p>Contrôleur de compte à rebours (CNTD) :</p>
-                    <div id="floatalign">
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/c3.svg" />
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/c1.svg" />
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/c2.svg" />
-                    </div>
-                </div>
-                <div class="page-footer relative-footer">Page 1 sur 2</div>
+    <div class="section">
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes</span>
+                <span class="page-header-section-title">Microcontroller</span>
             </div>
-            <div class="page">
-                <div class="page-header">
-                    <span class="page-header-doc-title">Keep Talking and Nobody Explodes</span>
-                    <span class="page-header-section-title">Microcontroller</span>
+            <div class="page-content">
+                <img src="img/Component/Microcontroller.svg" class="diagram" />
+                <h2>À propos de "Microcontrollers"</h2>
+                <p class="flavour-text">Ça s'appelle un "micro"-contrôleur, mais ce truc là-dedans est assez gros. Probablement parce que ça peut causer une grosse explosion...</p>
+
+                <ol>
+                    <li>Utilisez le type imprimé du contrôleur et sa taille pour déterminer la configuration des broches à l'aide des diagrammes ci-dessous.</li>
+                    <li>Le point blanc sur le contrôleur indique où se trouve la broche portant le chiffre 1. Les autres broches sont dans l'ordre croissant sur le côté avec le numéro 1, et dans l'ordre décroissant de l'autre côté.</li>
+                    <li>À l'aide du tableau ci-dessous, déterminez le code couleur correct pour chaque élément connecté.</li>
+                    <li>Pour chaque broche, choisissez l'élément correct en appuyant sur les boutons HAUT et BAS et en confirmant votre saisie avec le bouton OK (la broche suivante sera sélectionnée automatiquement).</li>
+                </ol>
+
+                <h3>Configurations des broches</h3>
+                <p>Contrôleur d'erreur (STRK) :</p>
+                <div id="floatalign">
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/a1.svg" />
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/a2.svg" />
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/a3.svg" />
                 </div>
-                <div class="page-content">
-                    <p>Contrôleur d'explosion (EXPL) :</p>
-                    <div id="floatalign">
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/d1.svg" />
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/d3.svg" />
-                        <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/d2.svg" />
-                    </div>
-                    <h3>Codes couleur des composants</h3>
-                    <table class="repeaters-table">
-                        <tr>
-                            <th colspan="1" class="repeaters-spacer"></th>
-                            <th>Tension d'entrée (VCC)</th>
-                            <th>Entrée analogique (AIN)</th>
-                            <th>Entrée numérique (DIN)</th>
-                            <th>Modulation de largeur d'impulsion (PWM)</th>
-                            <th>Reset (RST)</th>
-                        </tr>
-                        <tr>
-                            <th>Si le dernier chiffre du numéro de série du controlleur est 1 ou 4</th>
-                            <td>Jaune</td>
-                            <td>Magenta</td>
-                            <td>Vert</td>
-                            <td>Bleu</td>
-                            <td>Rouge</td>
-                        </tr>
-                        <tr>
-                            <th>Sinon, s'il y a un indicateur SIG allumé ou un port RJ-45</th>
-                            <td>Jaune</td>
-                            <td>Rouge</td>
-                            <td>Magenta</td>
-                            <td>Vert</td>
-                            <td>Bleu</td>
-                        </tr>
-                        <tr>
-                            <th>Sinon, si le numéro de série de la bombe contient C, L, R, X, 1 ou 8</th>
-                            <td>Rouge</td>
-                            <td>Magenta</td>
-                            <td>Vert</td>
-                            <td>Bleu</td>
-                            <td>Jaune</td>
-                        </tr>
-                        <tr>
-                            <th>Sinon, si le deuxième chiffre du numéro de série du contrôleur correspond au nombre de piles de la bombe</th>
-                            <td>Rouge</td>
-                            <td>Bleu</td>
-                            <td>Jaune</td>
-                            <td>Vert</td>
-                            <td>Magenta</td>
-                        </tr>
-                        <tr>
-                            <th>Sinon</th>
-                            <td>Vert</td>
-                            <td>Rouge</td>
-                            <td>Jaune</td>
-                            <td>Bleu</td>
-                            <td>Magenta</td>
-                        </tr>
-                    </table>
-                    <p>Remarque : La masse (GND) est toujours codée en blanc.</p>
+                <p>Contrôleur à diodes (LEDS) :</p>
+                <div id="floatalign">
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/b2.svg" />
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/b1.svg" />
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/b3.svg" />
                 </div>
-                <div class="page-footer relative-footer">Page 2 sur 2</div>
+                <p>Contrôleur de compte à rebours (CNTD) :</p>
+                <div id="floatalign">
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/c3.svg" />
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/c1.svg" />
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/c2.svg" />
+                </div>
             </div>
+            <div class="page-footer relative-footer">Page 1 sur 2</div>
+        </div>
+        <div class="page">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes</span>
+                <span class="page-header-section-title">Microcontroller</span>
+            </div>
+            <div class="page-content">
+                <p>Contrôleur d'explosion (EXPL) :</p>
+                <div id="floatalign">
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/d1.svg" />
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/d3.svg" />
+                    <img style="height: 9em; margin: 0 2em 0 2em" src="img/Microcontroller/d2.svg" />
+                </div>
+                <h3>Codes couleur des composants</h3>
+                <table class="repeaters-table">
+                    <tr>
+                        <th colspan="1" class="repeaters-spacer"></th>
+                        <th>Tension d'entrée (VCC)</th>
+                        <th>Entrée analogique (AIN)</th>
+                        <th>Entrée numérique (DIN)</th>
+                        <th>Modulation de largeur d'impulsion (PWM)</th>
+                        <th>Reset (RST)</th>
+                    </tr>
+                    <tr>
+                        <th>Si le dernier chiffre du numéro de série du controlleur est 1 ou 4</th>
+                        <td>Jaune</td>
+                        <td>Magenta</td>
+                        <td>Vert</td>
+                        <td>Bleu</td>
+                        <td>Rouge</td>
+                    </tr>
+                    <tr>
+                        <th>Sinon, s'il y a un indicateur SIG allumé ou un port RJ-45</th>
+                        <td>Jaune</td>
+                        <td>Rouge</td>
+                        <td>Magenta</td>
+                        <td>Vert</td>
+                        <td>Bleu</td>
+                    </tr>
+                    <tr>
+                        <th>Sinon, si le numéro de série de la bombe contient C, L, R, X, 1 ou 8</th>
+                        <td>Rouge</td>
+                        <td>Magenta</td>
+                        <td>Vert</td>
+                        <td>Bleu</td>
+                        <td>Jaune</td>
+                    </tr>
+                    <tr>
+                        <th>Sinon, si le deuxième chiffre du numéro de série du contrôleur correspond au nombre de piles de la bombe</th>
+                        <td>Rouge</td>
+                        <td>Bleu</td>
+                        <td>Jaune</td>
+                        <td>Vert</td>
+                        <td>Magenta</td>
+                    </tr>
+                    <tr>
+                        <th>Sinon</th>
+                        <td>Vert</td>
+                        <td>Rouge</td>
+                        <td>Jaune</td>
+                        <td>Bleu</td>
+                        <td>Magenta</td>
+                    </tr>
+                </table>
+                <p>Remarque : La masse (GND) est toujours codée en blanc.</p>
+            </div>
+            <div class="page-footer relative-footer">Page 2 sur 2</div>
         </div>
     </div>
 </body>

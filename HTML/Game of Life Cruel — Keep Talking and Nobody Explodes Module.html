@@ -1,146 +1,144 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
-        <title>Game of Life Cruel — Keep Talking and Nobody Explodes Module</title>
         <meta name="viewport" content="initial-scale=1">
+        <title>Game of Life Cruel — Keep Talking and Nobody Explodes Module</title>
+        <link rel="stylesheet" type="text/css" href="css/font.css">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type='text/css' href="css/font.css">
+        <script src="js/ktane-utils.js"></script>
         <script src='js/ktane-utils.js'></script>
     </head>
     <body>
-        <div id="ManualContent">
-            <div class="section">
-                <div class="page page-bg-01">
-                    <div class="page-header">
-                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                        <span class="page-header-section-title">Game of Life Cruel</span>
-                    </div>
-                    <div class="page-content">
-                        <img src="img/Component/Game of Life Cruel.svg" class="diagram">
-                        <h2>À propos de «&nbsp;Cruel Game of Life&nbsp;»</h2>
-                        <p class="flavour-text">Vivez une vie colorée, dit-on. On se trompe. Les couleurs rendent la vie cruelle.</p>
+        <div class="section">
+            <div class="page page-bg-01">
+                <div class="page-header">
+                    <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                    <span class="page-header-section-title">Game of Life Cruel</span>
+                </div>
+                <div class="page-content">
+                    <img src="img/Component/Game of Life Cruel.svg" class="diagram">
+                    <h2>À propos de «&nbsp;Cruel Game of Life&nbsp;»</h2>
+                    <p class="flavour-text">Vivez une vie colorée, dit-on. On se trompe. Les couleurs rendent la vie cruelle.</p>
 
-                        <p>Le module affichera une grille de carrés colorés en noir, blanc, rouge, orange, jaune, vert, vert, bleu, violet ou brun.
-                        Pour désamorcer ce module, les règles du jeu de la vie de Conway (voir tableau A) devront être appliquées à la grille une fois.
-                        Notez que les règles doivent être appliquées à tous les carrés en même temps pour chaque génération.
-                        </p>
-                        <p>
-                        L'état de chaque carré peut être changé en cliquant dessus. Notez que les carrés colorés doivent être convertis en noir ou en blanc, selon le tableau B, avant d'appliquer les règles du tableau A.
-                        Le noir et le blanc ne sont pas considérés comme des couleurs.
-                        </p>
-                        <ul>
-                            <li>Si la case ne clignote pas, utilisez simplement la règle du tableau B.</li>
-                            <li>Si le carré clignote d'une couleur, changez la couleur du carré en noir si la règle s'applique et en blanc si ce n'est pas le cas.</li>
-                            <li>Si le carré clignote de 2 couleurs primaires, utilisez la règle pour le mélange de 2 couleurs.</li>
-                            <li>Si le carré clignote d'une couleur primaire et d'une couleur secondaire, et que la couleur secondaire contient la couleur primaire comme composante, utilisez la règle pour la couleur primaire, sinon utilisez les règles pour la couleur secondaire.</li>
-                            <li>Si le carré clignote de 2 couleurs secondaires, utilisez les règles pour la couleur primaire qui est un composant des deux couleurs clignotantes.</li>
-                            <li>Si le carré clignote de 2 couleurs et que l'une d'elles est marron, utilisez la règle pour marron si le dernier chiffre du numéro de série est pair, sinon utilisez la règle pour l'autre couleur.</li>
-                        </ul>
-                        <p>Entrer la configuration finale correcte en appuyant sur «&nbsp;Submit&nbsp;» résoudra le module. Entrer la mauvaise configuration de cette façon provoquera une erreur.
-                        À tout moment, en appuyant sur «&nbsp;Reset&nbsp;», le module retourne à son état initial.
-                        </p>
-                        <p>MAIS si la bombe a exactement 6 piles dans 3 porte-piles, et un indicateur Bob éteint, ignorez toutes les règles. Bob est de retour pour vous aider encore une fois. Il suffit d'appuyer sur le bouton «&nbsp;Submit&nbsp;» dans l'état initial. Merci, Bob !
-                        </p>
-                    </div>
-                   <div class="page-footer relative-footer">Page 1 sur 3</div>
+                    <p>Le module affichera une grille de carrés colorés en noir, blanc, rouge, orange, jaune, vert, vert, bleu, violet ou brun.
+                    Pour désamorcer ce module, les règles du jeu de la vie de Conway (voir tableau A) devront être appliquées à la grille une fois.
+                    Notez que les règles doivent être appliquées à tous les carrés en même temps pour chaque génération.
+                    </p>
+                    <p>
+                    L'état de chaque carré peut être changé en cliquant dessus. Notez que les carrés colorés doivent être convertis en noir ou en blanc, selon le tableau B, avant d'appliquer les règles du tableau A.
+                    Le noir et le blanc ne sont pas considérés comme des couleurs.
+                    </p>
+                    <ul>
+                        <li>Si la case ne clignote pas, utilisez simplement la règle du tableau B.</li>
+                        <li>Si le carré clignote d'une couleur, changez la couleur du carré en noir si la règle s'applique et en blanc si ce n'est pas le cas.</li>
+                        <li>Si le carré clignote de 2 couleurs primaires, utilisez la règle pour le mélange de 2 couleurs.</li>
+                        <li>Si le carré clignote d'une couleur primaire et d'une couleur secondaire, et que la couleur secondaire contient la couleur primaire comme composante, utilisez la règle pour la couleur primaire, sinon utilisez les règles pour la couleur secondaire.</li>
+                        <li>Si le carré clignote de 2 couleurs secondaires, utilisez les règles pour la couleur primaire qui est un composant des deux couleurs clignotantes.</li>
+                        <li>Si le carré clignote de 2 couleurs et que l'une d'elles est marron, utilisez la règle pour marron si le dernier chiffre du numéro de série est pair, sinon utilisez la règle pour l'autre couleur.</li>
+                    </ul>
+                    <p>Entrer la configuration finale correcte en appuyant sur «&nbsp;Submit&nbsp;» résoudra le module. Entrer la mauvaise configuration de cette façon provoquera une erreur.
+                    À tout moment, en appuyant sur «&nbsp;Reset&nbsp;», le module retourne à son état initial.
+                    </p>
+                    <p>MAIS si la bombe a exactement 6 piles dans 3 porte-piles, et un indicateur Bob éteint, ignorez toutes les règles. Bob est de retour pour vous aider encore une fois. Il suffit d'appuyer sur le bouton «&nbsp;Submit&nbsp;» dans l'état initial. Merci, Bob !
+                    </p>
                 </div>
-                <div class="page page-bg-02">
-                    <div class="page-header">
-                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                        <span class="page-header-section-title">Cruel Game of Life</span>
-                    </div>
-                    <div class="page-content">
-                        <p>
-                        <u>Tableau A</u> <br>
-                        Une case est considérée comme voisine si elle est adjacente à une autre case, y compris en diagonale.
-                        </p>Si le carré est noir :
-                        <table>
-                            <tr>
-                                <td>Carrés voisins blancs &lt; 3 ou &gt; 3</td>
-                                <td>Reste noir</td>
-                            </tr>
-                            <tr>
-                                <td>Carrés voisins blancs = 3</td>
-                                <td>Devient blanc</td>
-                            </tr>
-                        </table>
-                        Si le carré est blanc :
-                        <table>
-                            <tr>
-                                <td>Carrés voisins blancs &lt; 2 ou &gt; 3</td>
-                                <td>Devient noir</td>
-                            </tr>
-                            <tr>
-                                <td>Carrés voisins blancs = 2 ou = 3</td>
-                                <td>Reste blanc</td>
-                            </tr>
-                        </table>
-                        <br>
-                        <u>Tableau B</u>
-                        <table>
-                            <tr>
-                                <th>Couleur du carré :</th>
-                                <th>Devient blanc si :</th>
-                            </tr>
-                            <tr>
-                                <td>Rouge</td>
-                                <td>Au moins une erreur*, sauf s'il n'y a pas de pile</td>
-                            </tr>
-                            <tr>
-                                <td>Orange</td>
-                                <td>Moins de la moitié de la limite de temps de départ de la bombe est affichée sur le chronomètre*, sauf si un indicateur CAR est présent.</td>
-                            </tr>
-                            <tr>
-                                <td>Jaune</td>
-                                <td>Il y a plus d'indicateurs allumés que d'indicateurs non allumés, sauf si un port RJ-45 est présent.</td>
-                            </tr>
-                            <tr>
-                                <td>Vert</td>
-                                <td>Nombre pair de modules résolus*, sauf si un indicateur CLR est présent</td>
-                            </tr>
-                            <tr>
-                                <td>Bleu</td>
-                                <td>Le numéro de série contient au moins une lettre en commun avec le mot "Sea" ou "Sky", sauf si un indicateur SND est présent.</td>
-                            </tr>
-                            <tr>
-                                <td>Violet</td>
-                                <td>Il y a plus de voyants éteints que de voyants allumés, sauf s'il y a au moins 4 piles.</td>
-                            </tr>
-                            <tr>
-                                <td>Marron</td>
-                                <td>Il y a au moins 3 types de ports différents, sauf s'il n'y a pas d'indicateurs</td>
-                            </tr>
-                        </table>
-                        *  Calculé lorsque vous appuyez sur «&nbsp;Submit&nbsp;»
-                    </div>
-                   <div class="page-footer relative-footer">Page 2 sur 3</div>
+               <div class="page-footer relative-footer">Page 1 sur 3</div>
+            </div>
+            <div class="page page-bg-02">
+                <div class="page-header">
+                    <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                    <span class="page-header-section-title">Cruel Game of Life</span>
                 </div>
-                <div class="page page-bg-03">
-                    <div class="page-header">
-                        <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                        <span class="page-header-section-title">Cruel Game of Life</span>
-                    </div>
-                    <div class="page-content">
-                        <p>
-                        <u>Annexe : couleurs primaires et secondaires</u>
-                        <br>
-                        <ul>
-                            <li>Les couleurs primaires sont rouge, bleu et jaune</li>
-                            <li>Les couleurs secondaires sont violet, vert et orange</li>
-                            <li>Mélanger du rouge et du bleu donne du violet</li>
-                            <li>Mélanger du bleu et du jaune donne du vert</li>
-                            <li>Mélanger du rouge et du jaune donne de l'orange</li>
-                            <li>Mélanger les 3 couleurs primaires donne du marron</li>
-                        </ul>
-                        </p>
-                        <img src="img/Game of Life/ColorDiagram.png" />
-                        <br>Source du diagramme : http://www.tomjewett.com/colors/paint.html
-                    </div>
-                   <div class="page-footer relative-footer">Page 3 sur 3</div>
+                <div class="page-content">
+                    <p>
+                    <u>Tableau A</u> <br>
+                    Une case est considérée comme voisine si elle est adjacente à une autre case, y compris en diagonale.
+                    </p>Si le carré est noir :
+                    <table>
+                        <tr>
+                            <td>Carrés voisins blancs &lt; 3 ou &gt; 3</td>
+                            <td>Reste noir</td>
+                        </tr>
+                        <tr>
+                            <td>Carrés voisins blancs = 3</td>
+                            <td>Devient blanc</td>
+                        </tr>
+                    </table>
+                    Si le carré est blanc :
+                    <table>
+                        <tr>
+                            <td>Carrés voisins blancs &lt; 2 ou &gt; 3</td>
+                            <td>Devient noir</td>
+                        </tr>
+                        <tr>
+                            <td>Carrés voisins blancs = 2 ou = 3</td>
+                            <td>Reste blanc</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <u>Tableau B</u>
+                    <table>
+                        <tr>
+                            <th>Couleur du carré :</th>
+                            <th>Devient blanc si :</th>
+                        </tr>
+                        <tr>
+                            <td>Rouge</td>
+                            <td>Au moins une erreur*, sauf s'il n'y a pas de pile</td>
+                        </tr>
+                        <tr>
+                            <td>Orange</td>
+                            <td>Moins de la moitié de la limite de temps de départ de la bombe est affichée sur le chronomètre*, sauf si un indicateur CAR est présent.</td>
+                        </tr>
+                        <tr>
+                            <td>Jaune</td>
+                            <td>Il y a plus d'indicateurs allumés que d'indicateurs non allumés, sauf si un port RJ-45 est présent.</td>
+                        </tr>
+                        <tr>
+                            <td>Vert</td>
+                            <td>Nombre pair de modules résolus*, sauf si un indicateur CLR est présent</td>
+                        </tr>
+                        <tr>
+                            <td>Bleu</td>
+                            <td>Le numéro de série contient au moins une lettre en commun avec le mot "Sea" ou "Sky", sauf si un indicateur SND est présent.</td>
+                        </tr>
+                        <tr>
+                            <td>Violet</td>
+                            <td>Il y a plus de voyants éteints que de voyants allumés, sauf s'il y a au moins 4 piles.</td>
+                        </tr>
+                        <tr>
+                            <td>Marron</td>
+                            <td>Il y a au moins 3 types de ports différents, sauf s'il n'y a pas d'indicateurs</td>
+                        </tr>
+                    </table>
+                    *  Calculé lorsque vous appuyez sur «&nbsp;Submit&nbsp;»
                 </div>
+               <div class="page-footer relative-footer">Page 2 sur 3</div>
+            </div>
+            <div class="page page-bg-03">
+                <div class="page-header">
+                    <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                    <span class="page-header-section-title">Cruel Game of Life</span>
+                </div>
+                <div class="page-content">
+                    <p>
+                    <u>Annexe : couleurs primaires et secondaires</u>
+                    <br>
+                    <ul>
+                        <li>Les couleurs primaires sont rouge, bleu et jaune</li>
+                        <li>Les couleurs secondaires sont violet, vert et orange</li>
+                        <li>Mélanger du rouge et du bleu donne du violet</li>
+                        <li>Mélanger du bleu et du jaune donne du vert</li>
+                        <li>Mélanger du rouge et du jaune donne de l'orange</li>
+                        <li>Mélanger les 3 couleurs primaires donne du marron</li>
+                    </ul>
+                    </p>
+                    <img src="img/Game of Life/ColorDiagram.png" />
+                    <br>Source du diagramme : http://www.tomjewett.com/colors/paint.html
+                </div>
+               <div class="page-footer relative-footer">Page 3 sur 3</div>
             </div>
         </div>
     </body>
