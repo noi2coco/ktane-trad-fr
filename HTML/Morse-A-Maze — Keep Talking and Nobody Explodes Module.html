@@ -1,14 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>Morse-A-Maze — Keep Talking and Nobody Explodes Module</title>
     <meta name="viewport" content="initial-scale=1">
+    <title>Morse-A-Maze — Keep Talking and Nobody Explodes Module</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type='text/css' href="css/font.css">
-    <script src='js/ktane-utils.js'></script>
+    <script src="js/ktane-utils.js"></script>
     <script src="js/ruleseed.js"></script>
     <style>
         ul {
@@ -244,8 +243,6 @@
             return score;
         }
 
-
-
         function removeWalls(m1, m2)
         {
             if (m1.x - m2.x == 1)
@@ -393,8 +390,6 @@
             //var stuff = words.map((w, ix) => { return { word: w, freq: freqs[ix] }; });
             //stuff.sort((a, b) => a.freq - b.freq);
             console.log(`[Morse-A-Maze rule seed] After sort: ${words.join(', ')}`);
-
-
 
             for (var i = 0; i < 18; i++)
                 document.getElementById('morse-maze-' + i).innerHTML = Mazes[i].ToSVG();
