@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Serrure à Combinaison — Keep Talking and Nobody Explodes Mod</title>
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+</head>
+<body>
+    <div class="section">
+        <div class="page page-bg-01">
+            <div class="page-header">
+                <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                <span class="page-header-section-title">Serrure à Combinaison</span>
+            </div>
+            <div class="page-content">
+                <img src="img/Component/Combination Lock.svg" class="diagram">
+                <h2>À propos des Serrures à Combinaison</h2>
+                <p class="flavour-text">On dirait une serrure à combinaison. Je croyais désarmer cette bombe, pas la déverrouiller.</p>
+                <p class="appendix-reference">
+                    Voir l'annexe B pour la référence d'identification des piles.
+                    <br>
+                    Voir l'annexe Double Sécurité pour la référence d'identification des double sécurité.
+                </p>
+                <p>Comme une serrure à combinaison typique, il faut 3 nombres pour l'ouvrir. Tourner le cadran vers la droite pour le premier nombre, ensuite vers la gauche pour le deuxième, et tourner-le vers la droite pour le dernier. Ça va l'ouvrir&nbsp;!
+                </p>
+                <p>Si les nombres séquentiels dans le code sont les mêmes, effectuer un tour complet à nouveau jusqu'au même nombre.</p>
+                <b><u>Comment décoder la combinaison&nbsp;:</u></b>
+                <p>Chaque nombre varie de 0 à 19. Se reporter au tableau pour déterminer chaque nombre. Attention s'il y a des Double Sécurité présents car ils changent souvent&nbsp;!</p>
+                <table>
+                    <tr>
+                        <td>
+                            <b><u>Premier nombre&nbsp;:</u></b>
+                            <ol>
+                                <li>Additionner le chiffre le moins significatif de chacun des Double Sécurité. S'il n'y a pas de Double Sécurité, utiliser le dernier chiffre du numéro de série plus le nombre de modules résolus.</li>
+                                <li>Ajouter le nombre de piles.</li>
+                                <li>Si le résultat est supérieur à 19, continuer à soustraire 20 jusqu'à ce que le résultat soit compris entre 0 et 19.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b><u>Deuxième nombre&nbsp;:</u></b>
+                            <ol>
+                                <li>Additionner le chiffre le plus significatif de chacun des Double Sécurité. S'il n'y a pas de Double Sécurité, utiliser le nombre de modules sur la bombe (en incluant les modules Demandant)..</li>
+                                <li>Ajoutez le nombre de modules résolus.</li>
+                                <li>Si le résultat est supérieur à 19, continuer à soustraire 20 jusqu'à ce que le résultat soit compris entre 0 et 19.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b><u>Troisième nombre&nbsp;:</u></b>
+                            <ol>
+                                <li>Additionner les deux premiers nombres ensemble.</li>
+                                <li>Si le résultat est supérieur à 19, continuer à soustraire 20 jusqu'à ce que le résultat soit compris entre 0 et 19.</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page-footer relative-footer">Page 1 sur 1</div>
+        </div>
+    </div>
+</body>
+</html>
