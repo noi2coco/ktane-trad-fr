@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
-    <title>Tic Tac Toe — Keep Talking and Nobody Explodes Module</title>
+    <title>Morpion — Keep Talking and Nobody Explodes Module</title>
     <link rel="stylesheet" type="text/css" href="css/font.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -26,7 +26,7 @@
                     "le deuxième caractère du numéro de série est une lettre",
                     "le numéro de série contient une voyelle",
                     "le numéro de série contient un chiffre pair",
-                    "le numéro de série contient un caractère en doublr",
+                    "le numéro de série contient un caractère en double",
                     "le numéro de série contient trois lettres et trois chiffres"
                 ],
                 'p': [
@@ -68,8 +68,8 @@
             var comparisons = {
                 's': [
                     ["le numéro de série contient plus de lettres que de chiffres", "le numéro de série contient plus de chiffres que de lettres", "le numéro de série contient trois chiffres et trois lettres."],
-                    ["le premier chiffre du numéro de série est plus grand que le second", "le premier chiffre du numéro de série est plus petit que le second", "le premier chiffre du numéro de série est plus égal au second"],
-                    ["le premier chiffre du numéro de série est plus grand que le dernier", "le premier chiffre du numéro de série est plus petit que le dernier", "le premier chiffre du numéro de série est plus égal au dernier"],
+                    ["le premier chiffre du numéro de série est plus grand que le second", "le premier chiffre du numéro de série est plus petit que le second", "le premier chiffre du numéro de série est égal au second"],
+                    ["le premier chiffre du numéro de série est plus grand que le dernier", "le premier chiffre du numéro de série est plus petit que le dernier", "le premier chiffre du numéro de série est égal au dernier"],
                     ["le numéro de série contient plus de voyelles que de consonnes", "le numéro de série contient plus de consonnes que de voyelles", "le numéro de série contient autant de consonnes que de voyelles"],
                     ["la première lettre du numéro de série vient alphabétiquement avant la deuxième", "la première lettre du numéro de série vient alphabétiquement après la deuxième", "la première et la deuxième lettre du numéro de série sont les mêmes"],
                     ["la première lettre du numéro de série vient alphabétiquement avant la dernière", "la première lettre du numéro de série vient alphabétiquement après la dernière", "la première et la dernière lettre du numéro de série sont les mêmes"],
@@ -153,7 +153,7 @@
                     ["la bombe a plus de piles AA que de piles D", "la bombe a plus de piles D que de piles AA", "la bombe a autant de piles AA que de piles D"],
                 ],
             };
-            var ports = ["parallèle", "serie", "PS/2", "DVI-D", "Stéréo RCA", "RJ-45"];
+            var ports = ["parallèle", "série", "PS/2", "DVI-D", "stéréo RCA", "RJ-45"];
             for (var i = 0; i < ports.length; i++)
             {
                 for (var j = 0; j < comparisons['s'].length; j++)
@@ -163,11 +163,11 @@
                         comparisons['s'][j]['p'].push([`le dernier chiffre du numéro de série est plus grand que le nombre de ports ${ports[i]}`, `le dernier chiffre du numéro de série est plus petit que le nombre de ports ${ports[i]}`, `le dernier chiffre du numéro de série est égal au nombre de ports ${ports[i]}`]);
                     }
                 for (var j = i + 1; j < ports.length; j++)
-                    comparisons['p'].push([`la bome a plus de ports ${ports[i]} que de ports ${ports[j]}`, `la bome a plus de ports ${ports[j]} que de ports ${ports[i]}`, `la bome a autants de ports ${ports[i]} que de ports ${ports[j]}`]);
+                    comparisons['p'].push([`la bombe a plus de ports ${ports[i]} que de ports ${ports[j]}`, `la bombe a plus de ports ${ports[j]} que de ports ${ports[i]}`, `la bombe a autants de ports ${ports[i]} que de ports ${ports[j]}`]);
             }
 
-            document.getElementById('condition-1').innerText = pickRandom(rnd, conditions[conditionTypes[0]]);
-            document.getElementById('condition-2').innerText = pickRandom(rnd, conditions[conditionTypes[1]]);
+            document.getElementById('condition-1').innerText = 'Si ' + pickRandom(rnd, conditions[conditionTypes[0]]);
+            document.getElementById('condition-2').innerText = 'Si ' + pickRandom(rnd, conditions[conditionTypes[1]]);
 
             var c1 = conditionTypes[2];
             var c2 = conditionTypes[3];
@@ -185,9 +185,9 @@
                     for (var j = 0; j < comparisons[c2][i][c1].length; j++)
                         list.push(comparisons[c2][i][c1][j]);
             var comparison = pickRandom(rnd, list);
-            document.getElementById('condition-3a').innerText = comparison[0];
-            document.getElementById('condition-3b').innerText = comparison[1];
-            document.getElementById('condition-3c').innerText = comparison[2];
+            document.getElementById('condition-3a').innerText = 'Si ' + comparison[0];
+            document.getElementById('condition-3b').innerText = 'Si ' + comparison[1];
+            document.getElementById('condition-3c').innerText = 'Si ' + comparison[2];
 
             var cells = Array.from(document.getElementsByClassName('number-row')).map(tr => Array.from(tr.getElementsByClassName('number')));
             var digits = rnd.shuffleFisherYates('123456789'.split(''));
@@ -206,11 +206,11 @@
 
         function setDefaultRules()
         {
-            document.getElementById("condition-1").innerText = "le dernier chiffre du numéro de série est pair";
-            document.getElementById("condition-2").innerText = "il y a au moins un port parallèle";
-            document.getElementById("condition-3a").innerText = "il y a plus d'indicateurs éteints que d'indicateurs allumés";
-            document.getElementById("condition-3b").innerText = "il y a plus d'indicateurs allumés que d'indicateurs éteints";
-            document.getElementById("condition-3c").innerText = "il y a autant d'indicateurs éteints que d'indicateurs allumés";
+            document.getElementById("condition-1").innerText = "Si le dernier chiffre du numéro de série est pair";
+            document.getElementById("condition-2").innerText = "S'il y a au moins un port parallèle est présent";
+            document.getElementById("condition-3a").innerText = "S'il y a plus d'indicateurs éteints que d'indicateurs allumés";
+            document.getElementById("condition-3b").innerText = "S'il y a plus d'indicateurs allumés que d'indicateurs éteints";
+            document.getElementById("condition-3c").innerText = "S'il y a autant d'indicateurs éteints que d'indicateurs allumés";
             var digits = "933981566712782158457896141673875244618439229525394367";
             var tds = document.getElementsByClassName('number');
             for (var i = 0; i < tds.length; i++)
@@ -228,10 +228,7 @@
             font-weight: bold;
             text-decoration: underline;
         }
-        table {
-            border: none;
-        }
-        .corner {
+        .dark table, table {
             border: none;
         }
     </style>
@@ -241,35 +238,35 @@
         <div class="page page-bg-01">
             <div class="page-header">
                 <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
-                <span class="page-header-section-title">Tic Tac Toe</span>
+                <span class="page-header-section-title">Morpion</span>
             </div>
             <div class="page-content">
                 <img src="img/Component/Tic Tac Toe.svg" class="diagram">
-                <h2>À propos de "Tic-Tac-Toe"</h2>
+                <h2>À propos du Morpion</h2>
                 <p class="flavour-text">Toutes ces années à faire égalité au morpion pourraient finalement servir.</p>
 
                 <p>Pour désamorcer ce module, les neuf boutons doivent être remplis de "X" et de "O".</p>
-                <p>L'écran intitulé "Up Next :" affiche un "X" ou un "O". Le clavier affiche certains chiffres entre 1 et 9 et certains "X" et "O" déjà placés. Après avoir placé un symbole, le clavier s'éteint.</p>
+                <p>L'écran intitulé «&nbsp;Up Next&nbsp;:&nbsp;» affiche un «&nbsp;X&nbsp;» ou un «&nbsp;O&nbsp;». Le clavier affiche certains chiffres entre 1 et 9 et certains «&nbsp;X&nbsp;» et «&nbsp;O&nbsp;» déjà placés. Après avoir placé un symbole, le clavier s'éteint.</p>
                 <p>Les chiffres du tableau de la page suivante indiquent l'emplacement sur le clavier où chaque symbole doit être placé.</p>
-                <p>Utilisez les règles ci-dessous pour déterminer la ligne de départ :</p>
+                <p>Utiliser les règles ci-dessous pour déterminer la ligne de départ :</p>
                 <ol>
-                    <li>Si <span class='condition' id="condition-1">le dernier chiffre du numéro de série est pair</span>, la ligne de départ est soit 5,&nbsp;6,&nbsp;7,&nbsp;8,&nbsp;ou&nbsp;9. Sinon, la ligne de départ est soit 1,&nbsp;2,&nbsp;3,&nbsp;ou&nbsp;4.</li>
-                    <li>Si <span class='condition' id="condition-2">il y a au moins un port parallèle</span>, utilisez les valeurs paires.  Sinon, utilisez les valeurs impaires.</li>
-                    <li>S'<span class='condition' id="condition-3a">il y a plus d'indicateurs éteints que d'indicateurs allumés</span>, la ligne de départ est la plus petite valeur restante de la règle&nbsp;2.</li>
-                    <li>S'<span class='condition' id="condition-3b">il y a plus d'indicateurs allumés que d'indicateurs éteints</span>, la ligne de départ est la plus grande valeur restante de la règle&nbsp;2.</li>
-                    <li>S'<span class='condition' id="condition-3c">il y a autant d'indicateurs éteints que d'indicateurs allumés</span>, , la ligne de départ est la moyenne des valeurs restantes de la règle&nbsp;2.</li>
+                    <li><span class='condition' id="condition-1">le dernier chiffre du numéro de série est pair</span>, la ligne de départ est soit 5,&nbsp;6,&nbsp;7,&nbsp;8,&nbsp;ou&nbsp;9. Sinon, la ligne de départ est soit 1,&nbsp;2,&nbsp;3,&nbsp;ou&nbsp;4.</li>
+                    <li><span class='condition' id="condition-2">il y a au moins un port parallèle</span>, utilisez les valeurs paires.  Sinon, utilisez les valeurs impaires.</li>
+                    <li><span class='condition' id="condition-3a">il y a plus d'indicateurs éteints que d'indicateurs allumés</span>, la ligne de départ est la plus petite valeur restante de la règle&nbsp;2.</li>
+                    <li><span class='condition' id="condition-3b">il y a plus d'indicateurs allumés que d'indicateurs éteints</span>, la ligne de départ est la plus grande valeur restante de la règle&nbsp;2.</li>
+                    <li><span class='condition' id="condition-3c">il y a autant d'indicateurs éteints que d'indicateurs allumés</span>, la ligne de départ est la moyenne des valeurs restantes de la règle&nbsp;2.</li>
                 </ol>
 
                 <p>
-                    Dans le tableau, déterminez la bonne colonne en fonction du nombre de "X" et de "O" déjà présents sur le tableau. Commencez par la ligne de départ et descendez la colonne choisie jusqu'à atteindre un chiffre correspondant à une place non remplie sur le clavier. Si vous passez la ligne&nbsp;9, continuez à la ligne&nbsp;1.
+                    Dans le tableau, déterminer la bonne colonne en fonction du nombre de «&nbsp;X&nbsp;» et de «&nbsp;O&nbsp;» déjà présents sur le tableau. Commencer par la ligne de départ et descendre la colonne choisie jusqu'à atteindre un chiffre correspondant à une place non remplie sur le clavier. Si la ligne&nbsp;9 est dépassée, continuer à la ligne&nbsp;1.
                 </p>
 
                 <p>
-                    Si placer le symbole à cet endroit peut provoquer un tic-tac-toe, vous DEVEZ appuyer sur "PASS" et continuer sur la <u>même</u> ligne ; sinon, placez le symbole en appuyant sur l'emplacement du clavier et passez à la ligne <u>suivante</u> du tableau.
+                    Si placer le symbole à cet endroit peut provoquer un morpion, vous DEVEZ appuyer sur «&nbsp;PASS&nbsp;» et continuer sur la <u>même</u> ligne ; sinon, placer le symbole en appuyant sur l'emplacement du clavier et passer à la ligne <u>suivante</u> du tableau.
                 </p>
 
                 <p>
-                    Deux "PASS" consécutifs entraîneront le placement (et l'affichage) d'un symbole dans l'un des espaces disponibles. Cela peut entraîner un tic-tac-toe, mais n'entraînera pas d'erreur. Dans ce cas, passez à la ligne <u>suivante</u> du tableau.
+                    Deux «&nbsp;PASS&nbsp;» consécutifs entraîneront le placement (et l'affichage) d'un symbole dans l'un des espaces disponibles. Cela peut entraîner morpion, mais n'entraînera pas d'erreur. Dans ce cas, passer à la ligne <u>suivante</u> du tableau.
                 </p>
 
                 <p>
@@ -289,24 +286,24 @@
                 <table class='ttt-table'>
                     <tr>
                         <td class='corner'></td>
-                        <td colspan=2>Plus de “X”</td>
-                        <td colspan=2>“X” = “O”</td>
-                        <td colspan=2>Plus de “O”</td>
+                        <td colspan=2>Plus de «&nbsp;X&nbsp;»</td>
+                        <td colspan=2>«&nbsp;X&nbsp;» = «&nbsp;O&nbsp;»</td>
+                        <td colspan=2>Plus de «&nbsp;O&nbsp;»</td>
                     </tr>
                     <tr>
                         <td class='corner'></td>
-                        <td colspan=2>Placer un:</td>
-                        <td colspan=2>Placer un:</td>
-                        <td colspan=2>Placer un:</td>
+                        <td colspan=2>Placer un :</td>
+                        <td colspan=2>Placer un :</td>
+                        <td colspan=2>Placer un :</td>
                     </tr>
                     <tr>
                         <th>LIGNE</th>
-                        <th>“X”</th>
-                        <th>“O”</th>
-                        <th>“X”</th>
-                        <th>“O”</th>
-                        <th>“X”</th>
-                        <th>“O”</th>
+                        <th>«&nbsp;X&nbsp;»</th>
+                        <th>«&nbsp;O&nbsp;»</th>
+                        <th>«&nbsp;X&nbsp;»</th>
+                        <th>«&nbsp;O&nbsp;»</th>
+                        <th>«&nbsp;X&nbsp;»</th>
+                        <th>«&nbsp;O&nbsp;»</th>
                     </tr>
                     <tr class='number-row'><th>1</th><td class='number'>9</td><td class='number'>3</td><td class='number'>3</td><td class='number'>9</td><td class='number'>8</td><td class='number'>1</td></tr>
                     <tr class='number-row'><th>2</th><td class='number'>5</td><td class='number'>6</td><td class='number'>6</td><td class='number'>7</td><td class='number'>1</td><td class='number'>2</td></tr>
